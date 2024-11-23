@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ef93856abfa6c806554ec1145754245d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ef93856abfa6c806554ec1145754245d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ef93856abfa6c806554ec1145754245d = L.map(
+                "map_ef93856abfa6c806554ec1145754245d",
+                {
+                    center: [40.732800000000005, -73.986],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b34d0432f58778e19deb78b9b2e7218e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b34d0432f58778e19deb78b9b2e7218e.addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var marker_c880a3abfbd87466c9a3aa3c9d85a876 = L.marker(
+                [40.7512542, -73.9731311],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_a8ae1ea5644a2c8cffa1ad0990f71461 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c880a3abfbd87466c9a3aa3c9d85a876.setIcon(icon_a8ae1ea5644a2c8cffa1ad0990f71461);
+        
+    
+        var popup_3814cfbb2a462fb9dae5490247c4e07a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efa09f3ea0e7e3295d4aad85a3e7ea30 = $(`<div id="html_efa09f3ea0e7e3295d4aad85a3e7ea30" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> New York Psychological Association</p>                     <p><strong>Category:</strong> Counseling</p>                     <p><strong>Description:</strong> Provides mental health counseling and therapy services.</p>                     <p><strong>Phone:</strong> (212) 555-1234</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 5pm</p>                 </div>             </div>`)[0];
+                popup_3814cfbb2a462fb9dae5490247c4e07a.setContent(html_efa09f3ea0e7e3295d4aad85a3e7ea30);
+            
+        
+
+        marker_c880a3abfbd87466c9a3aa3c9d85a876.bindPopup(popup_3814cfbb2a462fb9dae5490247c4e07a)
+        ;
+
+        
+    
+    
+            var marker_c22fd1ac4cffbc4074ed5db45678ac46 = L.marker(
+                [40.7141396, -74.0036705],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_db873957117286db83933e4c5c6caf29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c22fd1ac4cffbc4074ed5db45678ac46.setIcon(icon_db873957117286db83933e4c5c6caf29);
+        
+    
+        var popup_4f529c8bee09f625887dc6f884d31d35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d8484b46c7ca9f260fc4fbf9c35e20f = $(`<div id="html_7d8484b46c7ca9f260fc4fbf9c35e20f" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Safe Horizon Counseling Center</p>                     <p><strong>Category:</strong> Counseling</p>                     <p><strong>Description:</strong> Mental health support for individuals and families affected by trauma.</p>                     <p><strong>Phone:</strong> (212) 555-2345</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 6pm</p>                 </div>             </div>`)[0];
+                popup_4f529c8bee09f625887dc6f884d31d35.setContent(html_7d8484b46c7ca9f260fc4fbf9c35e20f);
+            
+        
+
+        marker_c22fd1ac4cffbc4074ed5db45678ac46.bindPopup(popup_4f529c8bee09f625887dc6f884d31d35)
+        ;
+
+        
+    
+    
+            var marker_bc53fe31e54405f460158a10de76756c = L.marker(
+                [40.7517726, -73.9810488],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_698bdf9267ff32038371b4411d60919e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc53fe31e54405f460158a10de76756c.setIcon(icon_698bdf9267ff32038371b4411d60919e);
+        
+    
+        var popup_7c684b6efc96d1d6f344206610f1dc0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a0bc4173ffce9ed0bfea0b6acc742b5 = $(`<div id="html_3a0bc4173ffce9ed0bfea0b6acc742b5" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> New York Counseling and Mental Health Services</p>                     <p><strong>Category:</strong> Counseling</p>                     <p><strong>Description:</strong> Licensed therapists providing mental health counseling and therapy.</p>                     <p><strong>Phone:</strong> (212) 555-6783</p>                     <p><strong>Hours:</strong> Mon-Fri: 8am - 7pm</p>                 </div>             </div>`)[0];
+                popup_7c684b6efc96d1d6f344206610f1dc0d.setContent(html_3a0bc4173ffce9ed0bfea0b6acc742b5);
+            
+        
+
+        marker_bc53fe31e54405f460158a10de76756c.bindPopup(popup_7c684b6efc96d1d6f344206610f1dc0d)
+        ;
+
+        
+    
+    
+            var marker_a4c008a0e6bc81e214cf1b38dfbb9550 = L.marker(
+                [40.7310737, -73.9932976],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_05ecdb6136f5b851753e583b705141c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4c008a0e6bc81e214cf1b38dfbb9550.setIcon(icon_05ecdb6136f5b851753e583b705141c2);
+        
+    
+        var popup_96b334d903613f98fa6374c721a619ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2bcff745c24f634caac242f3ed0ae55 = $(`<div id="html_f2bcff745c24f634caac242f3ed0ae55" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Psychotherapy Center of New York</p>                     <p><strong>Category:</strong> Counseling</p>                     <p><strong>Description:</strong> Provides a wide range of psychotherapy services for individuals and couples.</p>                     <p><strong>Phone:</strong> (212) 555-4321</p>                     <p><strong>Hours:</strong> Mon-Sun: 9am - 8pm</p>                 </div>             </div>`)[0];
+                popup_96b334d903613f98fa6374c721a619ab.setContent(html_f2bcff745c24f634caac242f3ed0ae55);
+            
+        
+
+        marker_a4c008a0e6bc81e214cf1b38dfbb9550.bindPopup(popup_96b334d903613f98fa6374c721a619ab)
+        ;
+
+        
+    
+    
+            var marker_d417531bf88321e27c783a0a787fe166 = L.marker(
+                [40.732347149999995, -73.9833343430061],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_ec4718a10131f198b9161e60a4764f14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d417531bf88321e27c783a0a787fe166.setIcon(icon_ec4718a10131f198b9161e60a4764f14);
+        
+    
+        var popup_73f44c5b3b0884f207b21cd5e5b68da2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5da7aaf4adf5f740ae54e649616b8f85 = $(`<div id="html_5da7aaf4adf5f740ae54e649616b8f85" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Therapists in NYC</p>                     <p><strong>Category:</strong> Counseling</p>                     <p><strong>Description:</strong> Therapists offering individual and family therapy for mental health issues.</p>                     <p><strong>Phone:</strong> (212) 555-5467</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 6pm</p>                 </div>             </div>`)[0];
+                popup_73f44c5b3b0884f207b21cd5e5b68da2.setContent(html_5da7aaf4adf5f740ae54e649616b8f85);
+            
+        
+
+        marker_d417531bf88321e27c783a0a787fe166.bindPopup(popup_73f44c5b3b0884f207b21cd5e5b68da2)
+        ;
+
+        
+    
+    
+            var marker_6dc39eee82598b62ef853264c3d9e55d = L.marker(
+                [40.737242, -74.000452],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_7a51e7497a831066dcadf2708d246a3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6dc39eee82598b62ef853264c3d9e55d.setIcon(icon_7a51e7497a831066dcadf2708d246a3e);
+        
+    
+        var popup_f1689b9a8076f0ef2826b6d59abf76fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_436c5ad7918ad7e35c883d5c74728e16 = $(`<div id="html_436c5ad7918ad7e35c883d5c74728e16" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> NYC Mental Health Center</p>                     <p><strong>Category:</strong> Counseling</p>                     <p><strong>Description:</strong> Specializes in trauma recovery and cognitive behavioral therapy.</p>                     <p><strong>Phone:</strong> (212) 555-8765</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 5pm</p>                 </div>             </div>`)[0];
+                popup_f1689b9a8076f0ef2826b6d59abf76fa.setContent(html_436c5ad7918ad7e35c883d5c74728e16);
+            
+        
+
+        marker_6dc39eee82598b62ef853264c3d9e55d.bindPopup(popup_f1689b9a8076f0ef2826b6d59abf76fa)
+        ;
+
+        
+    
+    
+            var marker_f3acaf4ce9e879a1da080b8124990be7 = L.marker(
+                [40.7373518, -73.9924317],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_63b2bbd5ffb2e851dbb0147a543a508d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3acaf4ce9e879a1da080b8124990be7.setIcon(icon_63b2bbd5ffb2e851dbb0147a543a508d);
+        
+    
+        var popup_1187bc2b18d675bc2613499903e7d120 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c84791453437a56b3b72acd016b88fa4 = $(`<div id="html_c84791453437a56b3b72acd016b88fa4" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Manhattan Mental Health Clinic</p>                     <p><strong>Category:</strong> Counseling</p>                     <p><strong>Description:</strong> Mental health professionals providing counseling for depression and anxiety.</p>                     <p><strong>Phone:</strong> (212) 555-5673</p>                     <p><strong>Hours:</strong> Mon-Fri: 8am - 6pm</p>                 </div>             </div>`)[0];
+                popup_1187bc2b18d675bc2613499903e7d120.setContent(html_c84791453437a56b3b72acd016b88fa4);
+            
+        
+
+        marker_f3acaf4ce9e879a1da080b8124990be7.bindPopup(popup_1187bc2b18d675bc2613499903e7d120)
+        ;
+
+        
+    
+    
+            var marker_951d88ba61b72ddaacdd7cc58332b1d2 = L.marker(
+                [40.814896000000005, -73.9435971371388],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_84739b16d8137b2b697b8ac753dbda6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_951d88ba61b72ddaacdd7cc58332b1d2.setIcon(icon_84739b16d8137b2b697b8ac753dbda6e);
+        
+    
+        var popup_0c3b462626916412448d4bfc76436ea3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c78f1fab5a10c8244cb75ce914bdc512 = $(`<div id="html_c78f1fab5a10c8244cb75ce914bdc512" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Greater Harlem Housing Development Corp.</p>                     <p><strong>Category:</strong> Counseling</p>                     <p><strong>Description:</strong> Offers mental health services and referrals to housing assistance.</p>                     <p><strong>Phone:</strong> (212) 555-6543</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 6pm</p>                 </div>             </div>`)[0];
+                popup_0c3b462626916412448d4bfc76436ea3.setContent(html_c78f1fab5a10c8244cb75ce914bdc512);
+            
+        
+
+        marker_951d88ba61b72ddaacdd7cc58332b1d2.bindPopup(popup_0c3b462626916412448d4bfc76436ea3)
+        ;
+
+        
+    
+    
+            var marker_686ec89854471e03abc1ef28aa29b048 = L.marker(
+                [40.663679158426746, -73.98426147642543],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_32c22b9fb1dcbc238aa59fca5089948f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_686ec89854471e03abc1ef28aa29b048.setIcon(icon_32c22b9fb1dcbc238aa59fca5089948f);
+        
+    
+        var popup_e3ed94ade50c4f43158bac1eac60b20f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd986f8b06321bc11e90d6ecc846e64f = $(`<div id="html_cd986f8b06321bc11e90d6ecc846e64f" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Brooklyn Mental Health Counseling</p>                     <p><strong>Category:</strong> Counseling</p>                     <p><strong>Description:</strong> Counseling services for individuals and families in the Brooklyn area.</p>                     <p><strong>Phone:</strong> (718) 555-2134</p>                     <p><strong>Hours:</strong> Mon-Sun: 10am - 8pm</p>                 </div>             </div>`)[0];
+                popup_e3ed94ade50c4f43158bac1eac60b20f.setContent(html_cd986f8b06321bc11e90d6ecc846e64f);
+            
+        
+
+        marker_686ec89854471e03abc1ef28aa29b048.bindPopup(popup_e3ed94ade50c4f43158bac1eac60b20f)
+        ;
+
+        
+    
+    
+            var marker_67b6c78c7ea2423ed4cca3325f14ce9a = L.marker(
+                [40.7059872, -74.0125863],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_2e3fe482e2015581b782d5fc2d5534f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67b6c78c7ea2423ed4cca3325f14ce9a.setIcon(icon_2e3fe482e2015581b782d5fc2d5534f7);
+        
+    
+        var popup_cbd33bff83956c7358130d61ec849e5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_133a257c3ff2489d2932f5aaef6479b8 = $(`<div id="html_133a257c3ff2489d2932f5aaef6479b8" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> City Psychological Services</p>                     <p><strong>Category:</strong> Counseling</p>                     <p><strong>Description:</strong> Provides psychological assessments and therapy services for adults and children.</p>                     <p><strong>Phone:</strong> (212) 555-8900</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 5pm</p>                 </div>             </div>`)[0];
+                popup_cbd33bff83956c7358130d61ec849e5f.setContent(html_133a257c3ff2489d2932f5aaef6479b8);
+            
+        
+
+        marker_67b6c78c7ea2423ed4cca3325f14ce9a.bindPopup(popup_cbd33bff83956c7358130d61ec849e5f)
+        ;
+
+        
+    
+    
+            var marker_1733e19c585ca53d954d8bc0587b3d5c = L.marker(
+                [40.70635025, -74.01343025076793],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_07c96f22c9a7f4183618499e1bf2cd3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1733e19c585ca53d954d8bc0587b3d5c.setIcon(icon_07c96f22c9a7f4183618499e1bf2cd3a);
+        
+    
+        var popup_ea5e92ec81509162f764271993446b34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6df4d4d10b264a81e7471ee7fd41d072 = $(`<div id="html_6df4d4d10b264a81e7471ee7fd41d072" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Food Bank For New York City</p>                     <p><strong>Category:</strong> Food</p>                     <p><strong>Description:</strong> Food distribution center serving NYC’s hungry.</p>                     <p><strong>Phone:</strong> (212) 555-3456</p>                     <p><strong>Hours:</strong> Mon-Fri: 8am - 6pm</p>                 </div>             </div>`)[0];
+                popup_ea5e92ec81509162f764271993446b34.setContent(html_6df4d4d10b264a81e7471ee7fd41d072);
+            
+        
+
+        marker_1733e19c585ca53d954d8bc0587b3d5c.bindPopup(popup_ea5e92ec81509162f764271993446b34)
+        ;
+
+        
+    
+    
+            var marker_ef1c926116a9262a0858511017169a41 = L.marker(
+                [40.7467776, -73.9848139],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_f22e5bedc6fb56b534126b1b8361fa32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ef1c926116a9262a0858511017169a41.setIcon(icon_f22e5bedc6fb56b534126b1b8361fa32);
+        
+    
+        var popup_2d01c18ea56f4d9ef6dc9b75b9a1dea6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8e93d3edb9c3ce380f21a6b2993980b = $(`<div id="html_c8e93d3edb9c3ce380f21a6b2993980b" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> City Harvest Food Rescue</p>                     <p><strong>Category:</strong> Food</p>                     <p><strong>Description:</strong> Collects surplus food and delivers it to local food pantries and shelters.</p>                     <p><strong>Phone:</strong> (212) 555-4567</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 5pm</p>                 </div>             </div>`)[0];
+                popup_2d01c18ea56f4d9ef6dc9b75b9a1dea6.setContent(html_c8e93d3edb9c3ce380f21a6b2993980b);
+            
+        
+
+        marker_ef1c926116a9262a0858511017169a41.bindPopup(popup_2d01c18ea56f4d9ef6dc9b75b9a1dea6)
+        ;
+
+        
+    
+    
+            var marker_6fe7a33995fc8e85e076e8b6efc76e3f = L.marker(
+                [40.80809436734694, -73.95051930612244],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_b9f22041103e083ba355be836b353791 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6fe7a33995fc8e85e076e8b6efc76e3f.setIcon(icon_b9f22041103e083ba355be836b353791);
+        
+    
+        var popup_eb409db155fcae011bf154799aeb1a4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d6531e2b9298f500c87de47f9faeec6 = $(`<div id="html_7d6531e2b9298f500c87de47f9faeec6" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Harlem Food Pantry</p>                     <p><strong>Category:</strong> Food</p>                     <p><strong>Description:</strong> Provides nutritious food to residents in Harlem.</p>                     <p><strong>Phone:</strong> (212) 555-5679</p>                     <p><strong>Hours:</strong> Mon-Sat: 9am - 4pm</p>                 </div>             </div>`)[0];
+                popup_eb409db155fcae011bf154799aeb1a4d.setContent(html_7d6531e2b9298f500c87de47f9faeec6);
+            
+        
+
+        marker_6fe7a33995fc8e85e076e8b6efc76e3f.bindPopup(popup_eb409db155fcae011bf154799aeb1a4d)
+        ;
+
+        
+    
+    
+            var marker_eb36beb0656fea1ef192bc0e6bf20293 = L.marker(
+                [40.6903916, -73.92889899271444],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_9b321f045e640ca456093719a869a436 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eb36beb0656fea1ef192bc0e6bf20293.setIcon(icon_9b321f045e640ca456093719a869a436);
+        
+    
+        var popup_ad861efc06da6d1f5d4fa2546773fa86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_855d2b3db3a9e874f62435016c4e640d = $(`<div id="html_855d2b3db3a9e874f62435016c4e640d" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> St. John’s Bread and Life</p>                     <p><strong>Category:</strong> Food</p>                     <p><strong>Description:</strong> A community food pantry offering groceries and hot meals.</p>                     <p><strong>Phone:</strong> (718) 555-6780</p>                     <p><strong>Hours:</strong> Mon-Sat: 10am - 5pm</p>                 </div>             </div>`)[0];
+                popup_ad861efc06da6d1f5d4fa2546773fa86.setContent(html_855d2b3db3a9e874f62435016c4e640d);
+            
+        
+
+        marker_eb36beb0656fea1ef192bc0e6bf20293.bindPopup(popup_ad861efc06da6d1f5d4fa2546773fa86)
+        ;
+
+        
+    
+    
+            var marker_200292c690afaf0c8e82eb2a994a4fb1 = L.marker(
+                [40.8324748, -73.9189758],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_38af92059e61f957c8970489b6d4bd90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_200292c690afaf0c8e82eb2a994a4fb1.setIcon(icon_38af92059e61f957c8970489b6d4bd90);
+        
+    
+        var popup_262929e95d385d1240f937c3e9ffe751 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98f7752d3a3fbf91a8b70caa7f17506e = $(`<div id="html_98f7752d3a3fbf91a8b70caa7f17506e" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> BronxWorks</p>                     <p><strong>Category:</strong> Food</p>                     <p><strong>Description:</strong> Food pantry and community kitchen providing meals to Bronx residents.</p>                     <p><strong>Phone:</strong> (718) 555-2348</p>                     <p><strong>Hours:</strong> Mon-Sat: 10am - 4pm</p>                 </div>             </div>`)[0];
+                popup_262929e95d385d1240f937c3e9ffe751.setContent(html_98f7752d3a3fbf91a8b70caa7f17506e);
+            
+        
+
+        marker_200292c690afaf0c8e82eb2a994a4fb1.bindPopup(popup_262929e95d385d1240f937c3e9ffe751)
+        ;
+
+        
+    
+    
+            var marker_6892f493aeea4081166690782e3b6a96 = L.marker(
+                [40.72566555, -74.0036292627635],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_05b080a25fae2f782ce725e71e7546b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6892f493aeea4081166690782e3b6a96.setIcon(icon_05b080a25fae2f782ce725e71e7546b7);
+        
+    
+        var popup_e1c35a707a5a1cf499234be7e24185aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11b900b666388654ff8db3acc925d47d = $(`<div id="html_11b900b666388654ff8db3acc925d47d" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> God’s Love We Deliver</p>                     <p><strong>Category:</strong> Food</p>                     <p><strong>Description:</strong> Delivers nutritious, medically tailored meals to people living with serious illness.</p>                     <p><strong>Phone:</strong> (212) 555-8765</p>                     <p><strong>Hours:</strong> Mon-Fri: 8am - 6pm</p>                 </div>             </div>`)[0];
+                popup_e1c35a707a5a1cf499234be7e24185aa.setContent(html_11b900b666388654ff8db3acc925d47d);
+            
+        
+
+        marker_6892f493aeea4081166690782e3b6a96.bindPopup(popup_e1c35a707a5a1cf499234be7e24185aa)
+        ;
+
+        
+    
+    
+            var marker_f2514cab5f9b3ad1f44dea1d12407e34 = L.marker(
+                [40.732583, -73.98359425],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_96f06ff9e371849c8c87031ef810d1f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f2514cab5f9b3ad1f44dea1d12407e34.setIcon(icon_96f06ff9e371849c8c87031ef810d1f7);
+        
+    
+        var popup_59f45b66eae8aaf381ec643d0e2cbfe3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dabfdcbefe722c7438ed870dbc6d51a = $(`<div id="html_6dabfdcbefe722c7438ed870dbc6d51a" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Loaves & Fishes Food Pantry</p>                     <p><strong>Category:</strong> Food</p>                     <p><strong>Description:</strong> Provides food for families in need in the East Village.</p>                     <p><strong>Phone:</strong> (212) 555-3459</p>                     <p><strong>Hours:</strong> Mon-Fri: 10am - 4pm</p>                 </div>             </div>`)[0];
+                popup_59f45b66eae8aaf381ec643d0e2cbfe3.setContent(html_6dabfdcbefe722c7438ed870dbc6d51a);
+            
+        
+
+        marker_f2514cab5f9b3ad1f44dea1d12407e34.bindPopup(popup_59f45b66eae8aaf381ec643d0e2cbfe3)
+        ;
+
+        
+    
+    
+            var marker_b99acc5f33a7a4e492e9d905c030eb93 = L.marker(
+                [40.7175417, -74.00161490916142],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_10f5cf9c50f79602746439b53a8e27a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b99acc5f33a7a4e492e9d905c030eb93.setIcon(icon_10f5cf9c50f79602746439b53a8e27a5);
+        
+    
+        var popup_f3e8c3b567c642fa85726a736be17ea7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d15be91b142ebdfa6cc1da0485a0dc17 = $(`<div id="html_d15be91b142ebdfa6cc1da0485a0dc17" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> New York City Rescue Mission</p>                     <p><strong>Category:</strong> Food</p>                     <p><strong>Description:</strong> Provides meals and emergency shelter for homeless individuals.</p>                     <p><strong>Phone:</strong> (212) 555-1235</p>                     <p><strong>Hours:</strong> 24/7</p>                 </div>             </div>`)[0];
+                popup_f3e8c3b567c642fa85726a736be17ea7.setContent(html_d15be91b142ebdfa6cc1da0485a0dc17);
+            
+        
+
+        marker_b99acc5f33a7a4e492e9d905c030eb93.bindPopup(popup_f3e8c3b567c642fa85726a736be17ea7)
+        ;
+
+        
+    
+    
+            var marker_156e49f5644dbb8ef25f081938e5b86e = L.marker(
+                [40.678228936170214, -74.00414923404256],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_f681879d2f83f78517ba16d447c88466 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_156e49f5644dbb8ef25f081938e5b86e.setIcon(icon_f681879d2f83f78517ba16d447c88466);
+        
+    
+        var popup_f7114e195a40bf74a1360de95e3e9853 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_830d83cafaf45075fb5a20237f3a8848 = $(`<div id="html_830d83cafaf45075fb5a20237f3a8848" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Red Hook Initiative</p>                     <p><strong>Category:</strong> Food</p>                     <p><strong>Description:</strong> A food pantry offering free meals and groceries to community members in need.</p>                     <p><strong>Phone:</strong> (718) 555-4321</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 5pm</p>                 </div>             </div>`)[0];
+                popup_f7114e195a40bf74a1360de95e3e9853.setContent(html_830d83cafaf45075fb5a20237f3a8848);
+            
+        
+
+        marker_156e49f5644dbb8ef25f081938e5b86e.bindPopup(popup_f7114e195a40bf74a1360de95e3e9853)
+        ;
+
+        
+    
+    
+            var marker_bfa7dea1518c8371922189f7254764a3 = L.marker(
+                [40.72532, -73.974717],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_4e957ce16c01a1f316160c43e8dfa6fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bfa7dea1518c8371922189f7254764a3.setIcon(icon_4e957ce16c01a1f316160c43e8dfa6fa);
+        
+    
+        var popup_aa8f06891034c7e27281ea72a8e5d819 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_252c1ab829b93175f1aab6e8ea1c68f9 = $(`<div id="html_252c1ab829b93175f1aab6e8ea1c68f9" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> United Jewish Council of the East Side</p>                     <p><strong>Category:</strong> Food</p>                     <p><strong>Description:</strong> Provides food, meals, and groceries for low-income families in the Lower East Side.</p>                     <p><strong>Phone:</strong> (212) 555-9876</p>                     <p><strong>Hours:</strong> Mon-Sun: 9am - 7pm</p>                 </div>             </div>`)[0];
+                popup_aa8f06891034c7e27281ea72a8e5d819.setContent(html_252c1ab829b93175f1aab6e8ea1c68f9);
+            
+        
+
+        marker_bfa7dea1518c8371922189f7254764a3.bindPopup(popup_aa8f06891034c7e27281ea72a8e5d819)
+        ;
+
+        
+    
+    
+            var marker_59a7d8cc1535309a72efe4dc21635d6d = L.marker(
+                [42.71088215789474, -73.706979],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_956cfd4936415ee66b4b835a58684e83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59a7d8cc1535309a72efe4dc21635d6d.setIcon(icon_956cfd4936415ee66b4b835a58684e83);
+        
+    
+        var popup_4d7a050699a11be5404bb5d4214ec616 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bda789285502b03d125eb8ca9780fd81 = $(`<div id="html_bda789285502b03d125eb8ca9780fd81" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Bellevue Hospital Center</p>                     <p><strong>Category:</strong> Healthcare</p>                     <p><strong>Description:</strong> Comprehensive health services including mental health care and addiction treatment.</p>                     <p><strong>Phone:</strong> (212) 555-5678</p>                     <p><strong>Hours:</strong> 24/7</p>                 </div>             </div>`)[0];
+                popup_4d7a050699a11be5404bb5d4214ec616.setContent(html_bda789285502b03d125eb8ca9780fd81);
+            
+        
+
+        marker_59a7d8cc1535309a72efe4dc21635d6d.bindPopup(popup_4d7a050699a11be5404bb5d4214ec616)
+        ;
+
+        
+    
+    
+            var marker_c1650ca2c917b292b0b7da2fc64b6e60 = L.marker(
+                [40.78909055, -73.95390005336077],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_4aaf404900125e7cb186c378b2e609d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1650ca2c917b292b0b7da2fc64b6e60.setIcon(icon_4aaf404900125e7cb186c378b2e609d7);
+        
+    
+        var popup_c0c1fde69fef03dab88c96acf85caed4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b93b4f32728e6c07203ea515fb80e65 = $(`<div id="html_3b93b4f32728e6c07203ea515fb80e65" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Mount Sinai Hospital</p>                     <p><strong>Category:</strong> Healthcare</p>                     <p><strong>Description:</strong> Offers medical care for individuals in underserved communities.</p>                     <p><strong>Phone:</strong> (212) 555-6789</p>                     <p><strong>Hours:</strong> 24/7</p>                 </div>             </div>`)[0];
+                popup_c0c1fde69fef03dab88c96acf85caed4.setContent(html_3b93b4f32728e6c07203ea515fb80e65);
+            
+        
+
+        marker_c1650ca2c917b292b0b7da2fc64b6e60.bindPopup(popup_c0c1fde69fef03dab88c96acf85caed4)
+        ;
+
+        
+    
+    
+            var marker_c05f637095343fa8cd8a9bf5b094c849 = L.marker(
+                [40.7157747, -74.0025352],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_c1e7940dc47f8bc3253cf744e79cdb9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c05f637095343fa8cd8a9bf5b094c849.setIcon(icon_c1e7940dc47f8bc3253cf744e79cdb9c);
+        
+    
+        var popup_52c571583b3b630006637699fa33905e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_519dc8fbacf11d1984f635627e67f543 = $(`<div id="html_519dc8fbacf11d1984f635627e67f543" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> NYC Health + Hospitals</p>                     <p><strong>Category:</strong> Healthcare</p>                     <p><strong>Description:</strong> Provides free or low-cost healthcare to NYC residents, including immigrants.</p>                     <p><strong>Phone:</strong> (212) 555-4568</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 5pm</p>                 </div>             </div>`)[0];
+                popup_52c571583b3b630006637699fa33905e.setContent(html_519dc8fbacf11d1984f635627e67f543);
+            
+        
+
+        marker_c05f637095343fa8cd8a9bf5b094c849.bindPopup(popup_52c571583b3b630006637699fa33905e)
+        ;
+
+        
+    
+    
+            var marker_337549a9bdd3fb5d3239520661084adf = L.marker(
+                [40.732436666666665, -73.981836],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_d3fd39d26fa61ad347f0d897aca1bda6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_337549a9bdd3fb5d3239520661084adf.setIcon(icon_d3fd39d26fa61ad347f0d897aca1bda6);
+        
+    
+        var popup_cc0adaa720a5fa8e2f23159da64f9a97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74378c87484126dd5f0aa736fe84b0ba = $(`<div id="html_74378c87484126dd5f0aa736fe84b0ba" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Mount Sinai Beth Israel Hospital</p>                     <p><strong>Category:</strong> Healthcare</p>                     <p><strong>Description:</strong> Provides emergency care, medical services, and specialty programs.</p>                     <p><strong>Phone:</strong> (212) 555-3458</p>                     <p><strong>Hours:</strong> 24/7</p>                 </div>             </div>`)[0];
+                popup_cc0adaa720a5fa8e2f23159da64f9a97.setContent(html_74378c87484126dd5f0aa736fe84b0ba);
+            
+        
+
+        marker_337549a9bdd3fb5d3239520661084adf.bindPopup(popup_cc0adaa720a5fa8e2f23159da64f9a97)
+        ;
+
+        
+    
+    
+            var marker_c7452d4b9039e817f085ac581123df7e = L.marker(
+                [40.74207345000001, -73.97433663105951],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_23b473242578ec8f3d221085c9cc62a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c7452d4b9039e817f085ac581123df7e.setIcon(icon_23b473242578ec8f3d221085c9cc62a0);
+        
+    
+        var popup_b755ce2cd7a6ccfdf663afafa3ecfc85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5edd80cd8659e8c45b576036e90048a = $(`<div id="html_b5edd80cd8659e8c45b576036e90048a" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> NYU Langone Medical Center</p>                     <p><strong>Category:</strong> Healthcare</p>                     <p><strong>Description:</strong> World-class hospital offering comprehensive health services.</p>                     <p><strong>Phone:</strong> (212) 555-9876</p>                     <p><strong>Hours:</strong> 24/7</p>                 </div>             </div>`)[0];
+                popup_b755ce2cd7a6ccfdf663afafa3ecfc85.setContent(html_b5edd80cd8659e8c45b576036e90048a);
+            
+        
+
+        marker_c7452d4b9039e817f085ac581123df7e.bindPopup(popup_b755ce2cd7a6ccfdf663afafa3ecfc85)
+        ;
+
+        
+    
+    
+            var marker_f8aec9a51b462664b381ae28d7c5e6da = L.marker(
+                [40.7208124, -73.9910887],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_39fc43a53065b63d29317b7822dadaaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f8aec9a51b462664b381ae28d7c5e6da.setIcon(icon_39fc43a53065b63d29317b7822dadaaf);
+        
+    
+        var popup_1af16b738a9b3c1231d84fca6f289cdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35f79dff4a210a9f3002b64eb1dcaf96 = $(`<div id="html_35f79dff4a210a9f3002b64eb1dcaf96" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Rivington House Healthcare Center</p>                     <p><strong>Category:</strong> Healthcare</p>                     <p><strong>Description:</strong> Healthcare services for those with chronic illness and HIV/AIDS.</p>                     <p><strong>Phone:</strong> (212) 555-7891</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 5pm</p>                 </div>             </div>`)[0];
+                popup_1af16b738a9b3c1231d84fca6f289cdd.setContent(html_35f79dff4a210a9f3002b64eb1dcaf96);
+            
+        
+
+        marker_f8aec9a51b462664b381ae28d7c5e6da.bindPopup(popup_1af16b738a9b3c1231d84fca6f289cdd)
+        ;
+
+        
+    
+    
+            var marker_a41fd90ce1dd5882a46e90dc7bb9fd8a = L.marker(
+                [40.7243422, -73.9791953],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_93e38505a9d4b47e8af86a90fa7bcd62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a41fd90ce1dd5882a46e90dc7bb9fd8a.setIcon(icon_93e38505a9d4b47e8af86a90fa7bcd62);
+        
+    
+        var popup_5f73d56183d39b2dbc50218c495b825a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3373a5d831d3dccf420f924493558c1c = $(`<div id="html_3373a5d831d3dccf420f924493558c1c" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Brightpoint Health</p>                     <p><strong>Category:</strong> Healthcare</p>                     <p><strong>Description:</strong> Provides outpatient mental health services, addiction treatment, and primary care.</p>                     <p><strong>Phone:</strong> (212) 555-3333</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 6pm</p>                 </div>             </div>`)[0];
+                popup_5f73d56183d39b2dbc50218c495b825a.setContent(html_3373a5d831d3dccf420f924493558c1c);
+            
+        
+
+        marker_a41fd90ce1dd5882a46e90dc7bb9fd8a.bindPopup(popup_5f73d56183d39b2dbc50218c495b825a)
+        ;
+
+        
+    
+    
+            var marker_992d1dd2da5283f9adb05c9d90b861c3 = L.marker(
+                [40.77364275, -73.96086187105126],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_66de61a0fc7ede2faacfba7c25029710 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_992d1dd2da5283f9adb05c9d90b861c3.setIcon(icon_66de61a0fc7ede2faacfba7c25029710);
+        
+    
+        var popup_26757e148bdd6b9e1d26bb8a0e2120d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6daa22700af3f41c4c4be6ab5d8d9d2b = $(`<div id="html_6daa22700af3f41c4c4be6ab5d8d9d2b" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Lenox Hill Hospital</p>                     <p><strong>Category:</strong> Healthcare</p>                     <p><strong>Description:</strong> General hospital with specialties in cancer, cardiology, and pediatric care.</p>                     <p><strong>Phone:</strong> (212) 555-1239</p>                     <p><strong>Hours:</strong> 24/7</p>                 </div>             </div>`)[0];
+                popup_26757e148bdd6b9e1d26bb8a0e2120d8.setContent(html_6daa22700af3f41c4c4be6ab5d8d9d2b);
+            
+        
+
+        marker_992d1dd2da5283f9adb05c9d90b861c3.bindPopup(popup_26757e148bdd6b9e1d26bb8a0e2120d8)
+        ;
+
+        
+    
+    
+            var marker_b49022fcacddc9c4cb3b301c8a5881cb = L.marker(
+                [40.69933555, -73.94274707573489],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_4139043b37ebe7c22c5f2e60b0b5b7f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b49022fcacddc9c4cb3b301c8a5881cb.setIcon(icon_4139043b37ebe7c22c5f2e60b0b5b7f9);
+        
+    
+        var popup_5b5bd69c588116c6d0a4169a76eeb8de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91179b5ff2e30e1a5d64a4ee38a9a6ca = $(`<div id="html_91179b5ff2e30e1a5d64a4ee38a9a6ca" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Woodhull Medical Center</p>                     <p><strong>Category:</strong> Healthcare</p>                     <p><strong>Description:</strong> Provides emergency care, behavioral health services, and more.</p>                     <p><strong>Phone:</strong> (718) 555-3450</p>                     <p><strong>Hours:</strong> Mon-Sun: 24/7</p>                 </div>             </div>`)[0];
+                popup_5b5bd69c588116c6d0a4169a76eeb8de.setContent(html_91179b5ff2e30e1a5d64a4ee38a9a6ca);
+            
+        
+
+        marker_b49022fcacddc9c4cb3b301c8a5881cb.bindPopup(popup_5b5bd69c588116c6d0a4169a76eeb8de)
+        ;
+
+        
+    
+    
+            var marker_e1c17b142d4da8af13bca20a38b9f802 = L.marker(
+                [40.5986876, -73.75346070400573],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_1b3798d1cbad72304b4e86a8ebe867c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e1c17b142d4da8af13bca20a38b9f802.setIcon(icon_1b3798d1cbad72304b4e86a8ebe867c2);
+        
+    
+        var popup_849d17e0bef6af2c0a3dd0497dd11f4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2c44dc1a3ca713c42064f932ad83884 = $(`<div id="html_b2c44dc1a3ca713c42064f932ad83884" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> St. John’s Episcopal Hospital</p>                     <p><strong>Category:</strong> Healthcare</p>                     <p><strong>Description:</strong> Provides emergency, behavioral, and primary healthcare services.</p>                     <p><strong>Phone:</strong> (718) 555-5670</p>                     <p><strong>Hours:</strong> Mon-Sun: 24/7</p>                 </div>             </div>`)[0];
+                popup_849d17e0bef6af2c0a3dd0497dd11f4b.setContent(html_b2c44dc1a3ca713c42064f932ad83884);
+            
+        
+
+        marker_e1c17b142d4da8af13bca20a38b9f802.bindPopup(popup_849d17e0bef6af2c0a3dd0497dd11f4b)
+        ;
+
+        
+    
+    
+            var marker_b59d1ae53b96d24791818c29149fe6fc = L.marker(
+                [40.7284401, -74.005096],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_ccdf2ce932086fb59a6fbd880c12c24b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b59d1ae53b96d24791818c29149fe6fc.setIcon(icon_ccdf2ce932086fb59a6fbd880c12c24b);
+        
+    
+        var popup_cd09660418516e57898421c2f77d4264 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ac4dcaeafce47b4e2269acfefa9dac3 = $(`<div id="html_8ac4dcaeafce47b4e2269acfefa9dac3" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Project Renewal Outreach</p>                     <p><strong>Category:</strong> Outreach</p>                     <p><strong>Description:</strong> Provides outreach services to homeless individuals across NYC.</p>                     <p><strong>Phone:</strong> (212) 555-7890</p>                     <p><strong>Hours:</strong> Mon-Sun: 9am - 7pm</p>                 </div>             </div>`)[0];
+                popup_cd09660418516e57898421c2f77d4264.setContent(html_8ac4dcaeafce47b4e2269acfefa9dac3);
+            
+        
+
+        marker_b59d1ae53b96d24791818c29149fe6fc.bindPopup(popup_cd09660418516e57898421c2f77d4264)
+        ;
+
+        
+    
+    
+            var marker_f7c1a2652027652d5fc88d3f181295e4 = L.marker(
+                [40.7050695, -74.0120653],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_5f9506a406365586eff9a3298713019a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f7c1a2652027652d5fc88d3f181295e4.setIcon(icon_5f9506a406365586eff9a3298713019a);
+        
+    
+        var popup_e0cbbfba72be64635e7fcfb6219fbaa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0c4bc1d613ac97e16f87c305f9fc14c = $(`<div id="html_c0c4bc1d613ac97e16f87c305f9fc14c" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> NYC Department of Homeless Services</p>                     <p><strong>Category:</strong> Outreach</p>                     <p><strong>Description:</strong> Connects people experiencing homelessness with shelters and resources.</p>                     <p><strong>Phone:</strong> (212) 555-8901</p>                     <p><strong>Hours:</strong> Mon-Fri: 8am - 6pm</p>                 </div>             </div>`)[0];
+                popup_e0cbbfba72be64635e7fcfb6219fbaa1.setContent(html_c0c4bc1d613ac97e16f87c305f9fc14c);
+            
+        
+
+        marker_f7c1a2652027652d5fc88d3f181295e4.bindPopup(popup_e0cbbfba72be64635e7fcfb6219fbaa1)
+        ;
+
+        
+    
+    
+            var marker_c9e04dfdbb26fdd07f762c9f4c32ff4d = L.marker(
+                [40.746638000000004, -73.99336895659056],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_1afbcc1e774270ca7a1d9099b0772413 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_c9e04dfdbb26fdd07f762c9f4c32ff4d.setIcon(icon_1afbcc1e774270ca7a1d9099b0772413);
+        
+    
+        var popup_4d4042eb621f604ffb0f0185df143a31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0342b2542ebe6799aa836de5223296e4 = $(`<div id="html_0342b2542ebe6799aa836de5223296e4" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Care for the Homeless Outreach</p>                     <p><strong>Category:</strong> Outreach</p>                     <p><strong>Description:</strong> Outreach services for individuals living on the street in NYC.</p>                     <p><strong>Phone:</strong> (212) 555-3457</p>                     <p><strong>Hours:</strong> Mon-Sun: 24/7</p>                 </div>             </div>`)[0];
+                popup_4d4042eb621f604ffb0f0185df143a31.setContent(html_0342b2542ebe6799aa836de5223296e4);
+            
+        
+
+        marker_c9e04dfdbb26fdd07f762c9f4c32ff4d.bindPopup(popup_4d4042eb621f604ffb0f0185df143a31)
+        ;
+
+        
+    
+    
+            var marker_efa7e851c9039a5c046033e7fad68e4b = L.marker(
+                [40.7456493, -73.9942855],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_9b6a1727d6dfda9deeea90e9a61cbaf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_efa7e851c9039a5c046033e7fad68e4b.setIcon(icon_9b6a1727d6dfda9deeea90e9a61cbaf8);
+        
+    
+        var popup_d55718f7fb9ee139f826cd884b8260f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f67ecb5df7154c32748243739a1b11f8 = $(`<div id="html_f67ecb5df7154c32748243739a1b11f8" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Union Square Outreach Program</p>                     <p><strong>Category:</strong> Outreach</p>                     <p><strong>Description:</strong> Street outreach for individuals in need of mental health support.</p>                     <p><strong>Phone:</strong> (212) 555-8902</p>                     <p><strong>Hours:</strong> Mon-Fri: 8am - 7pm</p>                 </div>             </div>`)[0];
+                popup_d55718f7fb9ee139f826cd884b8260f8.setContent(html_f67ecb5df7154c32748243739a1b11f8);
+            
+        
+
+        marker_efa7e851c9039a5c046033e7fad68e4b.bindPopup(popup_d55718f7fb9ee139f826cd884b8260f8)
+        ;
+
+        
+    
+    
+            var marker_4445d7e1a2a9c8de06b0c58acbf6a7ad = L.marker(
+                [40.7079924, -74.0063203],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_5463afffc75bccdc9a65eddc6a902f94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_4445d7e1a2a9c8de06b0c58acbf6a7ad.setIcon(icon_5463afffc75bccdc9a65eddc6a902f94);
+        
+    
+        var popup_6d2c477dd08d38801d07b44d82fc420b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9375bbb87c79ec6fc050cc00889a475 = $(`<div id="html_b9375bbb87c79ec6fc050cc00889a475" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Pathways to Housing NYC</p>                     <p><strong>Category:</strong> Outreach</p>                     <p><strong>Description:</strong> Offers street outreach services to individuals with chronic homelessness.</p>                     <p><strong>Phone:</strong> (212) 555-9013</p>                     <p><strong>Hours:</strong> Mon-Sun: 24/7</p>                 </div>             </div>`)[0];
+                popup_6d2c477dd08d38801d07b44d82fc420b.setContent(html_b9375bbb87c79ec6fc050cc00889a475);
+            
+        
+
+        marker_4445d7e1a2a9c8de06b0c58acbf6a7ad.bindPopup(popup_6d2c477dd08d38801d07b44d82fc420b)
+        ;
+
+        
+    
+    
+            var marker_1d6e5d2b7750084d438f40279d440963 = L.marker(
+                [40.7506544, -73.9855763],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_2cec883de91b5c6ddc9754bce82b220a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1d6e5d2b7750084d438f40279d440963.setIcon(icon_2cec883de91b5c6ddc9754bce82b220a);
+        
+    
+        var popup_914bd6c54073d908b2c9e43b23d17a94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_914891e86ba2c23500fe3d8876a5fbd4 = $(`<div id="html_914891e86ba2c23500fe3d8876a5fbd4" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Urban Pathways</p>                     <p><strong>Category:</strong> Outreach</p>                     <p><strong>Description:</strong> Connects individuals experiencing homelessness with housing and supportive services.</p>                     <p><strong>Phone:</strong> (212) 555-4444</p>                     <p><strong>Hours:</strong> Mon-Sun: 24/7</p>                 </div>             </div>`)[0];
+                popup_914bd6c54073d908b2c9e43b23d17a94.setContent(html_914891e86ba2c23500fe3d8876a5fbd4);
+            
+        
+
+        marker_1d6e5d2b7750084d438f40279d440963.bindPopup(popup_914bd6c54073d908b2c9e43b23d17a94)
+        ;
+
+        
+    
+    
+            var marker_c648b84c82f9762a79e3934427e25679 = L.marker(
+                [40.7456493, -73.9942855],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_42a50dbce5ce76b30ebf871d46ce9ea8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_c648b84c82f9762a79e3934427e25679.setIcon(icon_42a50dbce5ce76b30ebf871d46ce9ea8);
+        
+    
+        var popup_7e01729cfa202061b10e93f3552bbf23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ac44af2f872a85de71add40f8080f44 = $(`<div id="html_9ac44af2f872a85de71add40f8080f44" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Breaking Ground</p>                     <p><strong>Category:</strong> Outreach</p>                     <p><strong>Description:</strong> Street outreach and supportive services to homeless individuals in NYC.</p>                     <p><strong>Phone:</strong> (212) 555-5555</p>                     <p><strong>Hours:</strong> Mon-Sun: 9am - 9pm</p>                 </div>             </div>`)[0];
+                popup_7e01729cfa202061b10e93f3552bbf23.setContent(html_9ac44af2f872a85de71add40f8080f44);
+            
+        
+
+        marker_c648b84c82f9762a79e3934427e25679.bindPopup(popup_7e01729cfa202061b10e93f3552bbf23)
+        ;
+
+        
+    
+    
+            var marker_b90404c8e6f8642404a4a0efeed424f3 = L.marker(
+                [40.7653907, -73.9305232],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_e52ecbda87a6b50685aa3de486aeb224 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b90404c8e6f8642404a4a0efeed424f3.setIcon(icon_e52ecbda87a6b50685aa3de486aeb224);
+        
+    
+        var popup_2a1d66d475f99e657511c11ae1dda0d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_159ed47ab0eb51ed60a1fa2109e47541 = $(`<div id="html_159ed47ab0eb51ed60a1fa2109e47541" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Outreach Foundation</p>                     <p><strong>Category:</strong> Outreach</p>                     <p><strong>Description:</strong> Outreach program serving homeless and low-income communities in NYC.</p>                     <p><strong>Phone:</strong> (212) 555-6782</p>                     <p><strong>Hours:</strong> Mon-Sat: 9am - 6pm</p>                 </div>             </div>`)[0];
+                popup_2a1d66d475f99e657511c11ae1dda0d3.setContent(html_159ed47ab0eb51ed60a1fa2109e47541);
+            
+        
+
+        marker_b90404c8e6f8642404a4a0efeed424f3.bindPopup(popup_2a1d66d475f99e657511c11ae1dda0d3)
+        ;
+
+        
+    
+    
+            var marker_a2964b8e6391b7c2951348bc72d874e0 = L.marker(
+                [40.7352098, -73.99873496519886],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_95b06030dab5ff0e6c8cccfb80d60751 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a2964b8e6391b7c2951348bc72d874e0.setIcon(icon_95b06030dab5ff0e6c8cccfb80d60751);
+        
+    
+        var popup_e7250b7b3a32c09aac29b7ef2cd86d7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb3ab81e7da974a1b816eddde6ec1919 = $(`<div id="html_cb3ab81e7da974a1b816eddde6ec1919" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> NYC Homeless Outreach Program</p>                     <p><strong>Category:</strong> Outreach</p>                     <p><strong>Description:</strong> Providing outreach and resources to homeless individuals in NYC.</p>                     <p><strong>Phone:</strong> (212) 555-2345</p>                     <p><strong>Hours:</strong> Mon-Sun: 24/7</p>                 </div>             </div>`)[0];
+                popup_e7250b7b3a32c09aac29b7ef2cd86d7a.setContent(html_cb3ab81e7da974a1b816eddde6ec1919);
+            
+        
+
+        marker_a2964b8e6391b7c2951348bc72d874e0.bindPopup(popup_e7250b7b3a32c09aac29b7ef2cd86d7a)
+        ;
+
+        
+    
+    
+            var marker_f9cb99b8ea3f8fa6a64443e606ace22a = L.marker(
+                [40.7686752, -73.9695664],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_1eb03be3d14e9200e4056e5e16cbfe0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f9cb99b8ea3f8fa6a64443e606ace22a.setIcon(icon_1eb03be3d14e9200e4056e5e16cbfe0b);
+        
+    
+        var popup_f33ca9bf85c5d2461290a5bc092b5ee5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae5ace0bd6e658544f92f0da482e7889 = $(`<div id="html_ae5ace0bd6e658544f92f0da482e7889" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Hope for the Homeless</p>                     <p><strong>Category:</strong> Outreach</p>                     <p><strong>Description:</strong> A program that offers outreach and shelter services for the homeless.</p>                     <p><strong>Phone:</strong> (212) 555-3330</p>                     <p><strong>Hours:</strong> Mon-Sun: 9am - 6pm</p>                 </div>             </div>`)[0];
+                popup_f33ca9bf85c5d2461290a5bc092b5ee5.setContent(html_ae5ace0bd6e658544f92f0da482e7889);
+            
+        
+
+        marker_f9cb99b8ea3f8fa6a64443e606ace22a.bindPopup(popup_f33ca9bf85c5d2461290a5bc092b5ee5)
+        ;
+
+        
+    
+    
+            var marker_16f0bf674d2b17d8729fa084533f556c = L.marker(
+                [40.721965850000004, -73.99280071861847],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_b8d0b892086770bd87f3a6befa5e8ed2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_16f0bf674d2b17d8729fa084533f556c.setIcon(icon_b8d0b892086770bd87f3a6befa5e8ed2);
+        
+    
+        var popup_9ee5ef599ab9c2ca2a9e53010f2e9b93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3048c110b684e77569b7d2ea7db7d8c8 = $(`<div id="html_3048c110b684e77569b7d2ea7db7d8c8" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Bowery Mission</p>                     <p><strong>Category:</strong> Shelter</p>                     <p><strong>Description:</strong> Offers emergency shelter, meals, and recovery services for homeless individuals.</p>                     <p><strong>Phone:</strong> (212) 555-9012</p>                     <p><strong>Hours:</strong> 24/7</p>                 </div>             </div>`)[0];
+                popup_9ee5ef599ab9c2ca2a9e53010f2e9b93.setContent(html_3048c110b684e77569b7d2ea7db7d8c8);
+            
+        
+
+        marker_16f0bf674d2b17d8729fa084533f556c.bindPopup(popup_9ee5ef599ab9c2ca2a9e53010f2e9b93)
+        ;
+
+        
+    
+    
+            var marker_9309ed078a24ac5aef819835a2bcf17f = L.marker(
+                [40.7102149, -74.0075111],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_f97afba49feac79f9d6188c75b343c07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9309ed078a24ac5aef819835a2bcf17f.setIcon(icon_f97afba49feac79f9d6188c75b343c07);
+        
+    
+        var popup_328352c90063dba25c4fb97ad2a75a7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff3b364c3de96f85cb29dc7935a1fda6 = $(`<div id="html_ff3b364c3de96f85cb29dc7935a1fda6" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Coalition for the Homeless</p>                     <p><strong>Category:</strong> Shelter</p>                     <p><strong>Description:</strong> Provides emergency shelter, food, and advocacy for homeless people.</p>                     <p><strong>Phone:</strong> (212) 555-0123</p>                     <p><strong>Hours:</strong> Mon-Sun: 24/7</p>                 </div>             </div>`)[0];
+                popup_328352c90063dba25c4fb97ad2a75a7e.setContent(html_ff3b364c3de96f85cb29dc7935a1fda6);
+            
+        
+
+        marker_9309ed078a24ac5aef819835a2bcf17f.bindPopup(popup_328352c90063dba25c4fb97ad2a75a7e)
+        ;
+
+        
+    
+    
+            var marker_404c8a21c867565eee599cc82d076476 = L.marker(
+                [40.7175417, -74.00161490916142],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_8d3151f1b4650a06d885150b557e9cdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_404c8a21c867565eee599cc82d076476.setIcon(icon_8d3151f1b4650a06d885150b557e9cdc);
+        
+    
+        var popup_2b0588cd2cc2f3bf9ec387b21092b7cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c6e69f6176e8bf196259cd913fd57a1 = $(`<div id="html_0c6e69f6176e8bf196259cd913fd57a1" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> New York City Rescue Mission</p>                     <p><strong>Category:</strong> Shelter</p>                     <p><strong>Description:</strong> Homeless shelter providing meals, shelter, and recovery programs.</p>                     <p><strong>Phone:</strong> (212) 555-1235</p>                     <p><strong>Hours:</strong> 24/7</p>                 </div>             </div>`)[0];
+                popup_2b0588cd2cc2f3bf9ec387b21092b7cb.setContent(html_0c6e69f6176e8bf196259cd913fd57a1);
+            
+        
+
+        marker_404c8a21c867565eee599cc82d076476.bindPopup(popup_2b0588cd2cc2f3bf9ec387b21092b7cb)
+        ;
+
+        
+    
+    
+            var marker_f352d6712ec17ec93779daf0244d211d = L.marker(
+                [40.80310495918368, -73.96777795918366],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_f2b81a109adaf586b3732c050033a2ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f352d6712ec17ec93779daf0244d211d.setIcon(icon_f2b81a109adaf586b3732c050033a2ae);
+        
+    
+        var popup_899924ae335f7c4803cca5c260508eaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26a7b5514369a56cd058a6500e709e01 = $(`<div id="html_26a7b5514369a56cd058a6500e709e01" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Good Shepherd Services Shelter</p>                     <p><strong>Category:</strong> Shelter</p>                     <p><strong>Description:</strong> A shelter and resource center for women and children escaping domestic violence.</p>                     <p><strong>Phone:</strong> (212) 555-2346</p>                     <p><strong>Hours:</strong> Mon-Fri: 8am - 6pm</p>                 </div>             </div>`)[0];
+                popup_899924ae335f7c4803cca5c260508eaf.setContent(html_26a7b5514369a56cd058a6500e709e01);
+            
+        
+
+        marker_f352d6712ec17ec93779daf0244d211d.bindPopup(popup_899924ae335f7c4803cca5c260508eaf)
+        ;
+
+        
+    
+    
+            var marker_47a7286bd19ae0499fbe64c1a2038d6f = L.marker(
+                [40.638076999999996, -74.13211041002697],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_ee6c7fe5b449340ee6ececce68dfb2f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_47a7286bd19ae0499fbe64c1a2038d6f.setIcon(icon_ee6c7fe5b449340ee6ececce68dfb2f5);
+        
+    
+        var popup_6aaec8ed1f4e42c5968f49c992f9acdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a835560a5fde68fda417b3b00f27692 = $(`<div id="html_8a835560a5fde68fda417b3b00f27692" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Project Hospitality</p>                     <p><strong>Category:</strong> Shelter</p>                     <p><strong>Description:</strong> Shelter for homeless individuals, providing food, clothing, and emergency housing.</p>                     <p><strong>Phone:</strong> (718) 555-1122</p>                     <p><strong>Hours:</strong> Mon-Sun: 24/7</p>                 </div>             </div>`)[0];
+                popup_6aaec8ed1f4e42c5968f49c992f9acdb.setContent(html_8a835560a5fde68fda417b3b00f27692);
+            
+        
+
+        marker_47a7286bd19ae0499fbe64c1a2038d6f.bindPopup(popup_6aaec8ed1f4e42c5968f49c992f9acdb)
+        ;
+
+        
+    
+    
+            var marker_19bd8f54cdf8bfc46cf1105f385ca887 = L.marker(
+                [40.7312529, -73.9963431],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_3c2591105052df01cb84db8d9d6cc9ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_19bd8f54cdf8bfc46cf1105f385ca887.setIcon(icon_3c2591105052df01cb84db8d9d6cc9ae);
+        
+    
+        var popup_676655a1cda4aaaef120a22903dbd95f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7954289b48786fbd95b72992eab71656 = $(`<div id="html_7954289b48786fbd95b72992eab71656" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> The Bowery Residents' Committee</p>                     <p><strong>Category:</strong> Shelter</p>                     <p><strong>Description:</strong> Offers shelter, food, and social services to homeless New Yorkers.</p>                     <p><strong>Phone:</strong> (212) 555-6666</p>                     <p><strong>Hours:</strong> 24/7</p>                 </div>             </div>`)[0];
+                popup_676655a1cda4aaaef120a22903dbd95f.setContent(html_7954289b48786fbd95b72992eab71656);
+            
+        
+
+        marker_19bd8f54cdf8bfc46cf1105f385ca887.bindPopup(popup_676655a1cda4aaaef120a22903dbd95f)
+        ;
+
+        
+    
+    
+            var marker_c27d8095e0cb434d4e560c54838e005a = L.marker(
+                [40.73752797959184, -73.99746175510204],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_65766874fff7a6bbf1595fcb48812dee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c27d8095e0cb434d4e560c54838e005a.setIcon(icon_65766874fff7a6bbf1595fcb48812dee);
+        
+    
+        var popup_9080dbee8fab58c663a5c85f28f33364 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeb79e267f704958845dd0c0f2311bd4 = $(`<div id="html_eeb79e267f704958845dd0c0f2311bd4" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Women In Need (WIN) Shelter</p>                     <p><strong>Category:</strong> Shelter</p>                     <p><strong>Description:</strong> Provides temporary housing and support services for women and children.</p>                     <p><strong>Phone:</strong> (212) 555-0124</p>                     <p><strong>Hours:</strong> Mon-Sun: 24/7</p>                 </div>             </div>`)[0];
+                popup_9080dbee8fab58c663a5c85f28f33364.setContent(html_eeb79e267f704958845dd0c0f2311bd4);
+            
+        
+
+        marker_c27d8095e0cb434d4e560c54838e005a.bindPopup(popup_9080dbee8fab58c663a5c85f28f33364)
+        ;
+
+        
+    
+    
+            var marker_0763a638d983f1a9691415608bdd3221 = L.marker(
+                [40.805237250000005, -73.96138749411026],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_fc3d55e6ff332569faf59645fa5c774d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0763a638d983f1a9691415608bdd3221.setIcon(icon_fc3d55e6ff332569faf59645fa5c774d);
+        
+    
+        var popup_8b3ef3ffa8e5c18f90a4078e788e679a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_273e9c51c178ddcc0fecbf5ab3c3b610 = $(`<div id="html_273e9c51c178ddcc0fecbf5ab3c3b610" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> St. Luke’s-Roosevelt Hospital Center</p>                     <p><strong>Category:</strong> Shelter</p>                     <p><strong>Description:</strong> General and emergency medical services, including specialized programs.</p>                     <p><strong>Phone:</strong> (212) 555-7777</p>                     <p><strong>Hours:</strong> 24/7</p>                 </div>             </div>`)[0];
+                popup_8b3ef3ffa8e5c18f90a4078e788e679a.setContent(html_273e9c51c178ddcc0fecbf5ab3c3b610);
+            
+        
+
+        marker_0763a638d983f1a9691415608bdd3221.bindPopup(popup_8b3ef3ffa8e5c18f90a4078e788e679a)
+        ;
+
+        
+    
+    
+            var marker_77b75c88c502d63a62acc977240e4715 = L.marker(
+                [40.7692819, -73.9827788],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_d23e99c475d4864392c584b4280c9f97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_77b75c88c502d63a62acc977240e4715.setIcon(icon_d23e99c475d4864392c584b4280c9f97);
+        
+    
+        var popup_5b11bcc84a246bd11ee439322e01cd55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e680a48c7acf3e4120af8357886cbdd = $(`<div id="html_9e680a48c7acf3e4120af8357886cbdd" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Hope House Shelter</p>                     <p><strong>Category:</strong> Shelter</p>                     <p><strong>Description:</strong> Provides emergency shelter for homeless individuals and families.</p>                     <p><strong>Phone:</strong> (212) 555-8888</p>                     <p><strong>Hours:</strong> Mon-Sun: 24/7</p>                 </div>             </div>`)[0];
+                popup_5b11bcc84a246bd11ee439322e01cd55.setContent(html_9e680a48c7acf3e4120af8357886cbdd);
+            
+        
+
+        marker_77b75c88c502d63a62acc977240e4715.bindPopup(popup_5b11bcc84a246bd11ee439322e01cd55)
+        ;
+
+        
+    
+    
+            var marker_8263351315605df3e58615a36f5f884a = L.marker(
+                [40.76050730612245, -73.98598412244898],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+            var icon_a7e95635b1db643f2adb4fdf37293e59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8263351315605df3e58615a36f5f884a.setIcon(icon_a7e95635b1db643f2adb4fdf37293e59);
+        
+    
+        var popup_6ffa7d2a99df50c13e97e241bd3bc1e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4762e6d25eb13e1eef7bdc94cb086eb7 = $(`<div id="html_4762e6d25eb13e1eef7bdc94cb086eb7" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Safe Haven Shelter</p>                     <p><strong>Category:</strong> Shelter</p>                     <p><strong>Description:</strong> Emergency shelter services for individuals and families in need.</p>                     <p><strong>Phone:</strong> (212) 555-9871</p>                     <p><strong>Hours:</strong> Mon-Sun: 24/7</p>                 </div>             </div>`)[0];
+                popup_6ffa7d2a99df50c13e97e241bd3bc1e2.setContent(html_4762e6d25eb13e1eef7bdc94cb086eb7);
+            
+        
+
+        marker_8263351315605df3e58615a36f5f884a.bindPopup(popup_6ffa7d2a99df50c13e97e241bd3bc1e2)
+        ;
+
+        
+    
+    
+            var marker_a4a091b58cec7c57419703ea2e7fd274 = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+        var popup_6a2f458cfab47222d9d50de6f3fc9e67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45a34dcfed7ec5bd25626b6a2abbb13c = $(`<div id="html_45a34dcfed7ec5bd25626b6a2abbb13c" style="width: 100.0%; height: 100.0%;">Marker at 40.7128, -74.006</div>`)[0];
+                popup_6a2f458cfab47222d9d50de6f3fc9e67.setContent(html_45a34dcfed7ec5bd25626b6a2abbb13c);
+            
+        
+
+        marker_a4a091b58cec7c57419703ea2e7fd274.bindPopup(popup_6a2f458cfab47222d9d50de6f3fc9e67)
+        ;
+
+        
+    
+    
+            var marker_285ac705ff070fe7f382bae06123d526 = L.marker(
+                [40.7228, -73.996],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+        var popup_653f3628d77a2cec8ca8336d85d65aba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_743cebc213b31de8dcbf01b2b25385d8 = $(`<div id="html_743cebc213b31de8dcbf01b2b25385d8" style="width: 100.0%; height: 100.0%;">Marker at 40.7228, -73.996</div>`)[0];
+                popup_653f3628d77a2cec8ca8336d85d65aba.setContent(html_743cebc213b31de8dcbf01b2b25385d8);
+            
+        
+
+        marker_285ac705ff070fe7f382bae06123d526.bindPopup(popup_653f3628d77a2cec8ca8336d85d65aba)
+        ;
+
+        
+    
+    
+            var marker_efc285689b3698ece420653bd569495d = L.marker(
+                [40.732800000000005, -73.986],
+                {}
+            ).addTo(map_ef93856abfa6c806554ec1145754245d);
+        
+    
+        var popup_2b503a50a406cdc5479908129a1e1a77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54f88dfc565f60e6481eea0946718b0a = $(`<div id="html_54f88dfc565f60e6481eea0946718b0a" style="width: 100.0%; height: 100.0%;">Marker at 40.732800000000005, -73.986</div>`)[0];
+                popup_2b503a50a406cdc5479908129a1e1a77.setContent(html_54f88dfc565f60e6481eea0946718b0a);
+            
+        
+
+        marker_efc285689b3698ece420653bd569495d.bindPopup(popup_2b503a50a406cdc5479908129a1e1a77)
+        ;
+
+        
+    
+</script>
+</html>
