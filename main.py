@@ -12,6 +12,7 @@ geolocator = Nominatim(user_agent="myGeocoder")
 # initial marker of New York City
 markers = []
 existing_markers = set()
+m = folium.Map(location=(40.7128, -74.0060), zoom_start=12)
 
 category_colors = {
     'Counseling': 'blue',
@@ -22,14 +23,16 @@ category_colors = {
 }
 
 def create_map():
-    m = folium.Map(location=(40.7128, -74.0060), zoom_start=12) 
+    # m = folium.Map(location=(40.7128, -74.0060), zoom_start=12) 
     m.save("GitGudMap.html")
+    print(f'markers are {markers}\n existing markers are {existing_markers}')
 
-@app.route('/update', methods=['POST'])
-def update_markers():
-    print("Updating markers...")
-    global markers, existing_markers
-    url = "http://0.0.0.0:8080/resources/food/getAll"
+def update_markers(category):
+    global markers, existing_markers, m
+
+    print(f'markers are {markers}\n existing markers are {existing_markers}')
+    print(f"Updating markers for {category}...")
+    url = f"http://0.0.0.0:8080/resources/{category.lower()}/getAll"
     headers = {
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXUyJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImV4cCI6MjU5NjE0OTI0OCwiaWF0IjoxNzMyMTQ5MjQ4LCJpc3MiOiJhdXRoLXNlcnZpY2UiLCJyb2xlIjoidXNlciIsInVzZXJJZCI6IjY3M2U4MDAwZDM1YTZiNGEzYzAwNTU5MiJ9.2TlZ1tnhclP708JotgxCLls0ekXX_Dmq9t5noG_xlOE"
     }
@@ -42,7 +45,7 @@ def update_markers():
         
         # Create a new map object
         last_marker = markers[-1] if markers else (40.7128, -74.0060)
-        m = folium.Map(location=last_marker, zoom_start=12)
+        # m = folium.Map(location=last_marker, zoom_start=12)
         
         for item in data:
             # print(f'item is {item}\n')
@@ -67,10 +70,11 @@ def update_markers():
                                 <p><strong>Description:</strong> {item['Description']}</p>
                                 <p><strong>Contact Info:</strong> {item['ContactInfo']}</p>
                                 <p><strong>Hours of Operation:</strong> {item['HoursOfOperation']}</p>
+                                <p><strong>Category:</strong> {category}</p>
                             </div>
                         """
                         
-                        marker_color = category_colors.get("Food")
+                        marker_color = category_colors.get(category, 'gray')
                         folium.Marker([lat, lon], popup=popup_info, icon=folium.Icon(color=marker_color)).add_to(m)
 
                     else:
@@ -81,11 +85,32 @@ def update_markers():
                 print(f"Item does not contain 'Address' key: {item}")
         
         # create_map()
+        print(f'markers are {markers}\n existing markers are {existing_markers}')
         m.save("GitGudMap.html")
-        return jsonify({"status": "success", "message": "Markers updated"}), 200
+        return jsonify({"status": "success", "message": f"{category} markers updated"}), 200
     except Exception as e:
         print(f"Error fetching data from API: {e}")
         return jsonify({"status": "error", "message": str(e)}), 500
+
+@app.route('/update/counseling', methods=['POST'])
+def update_counseling():
+    return update_markers('Counseling')
+
+@app.route('/update/food', methods=['POST'])
+def update_food():
+    return update_markers('Food')
+
+@app.route('/update/healthcare', methods=['POST'])
+def update_healthcare():
+    return update_markers('Healthcare')
+
+@app.route('/update/outreach', methods=['POST'])
+def update_outreach():
+    return update_markers('Outreach')
+
+@app.route('/update/shelter', methods=['POST'])
+def update_shelter():
+    return update_markers('Shelter')
 
 if __name__ == "__main__":    
     create_map() # create an empty map
