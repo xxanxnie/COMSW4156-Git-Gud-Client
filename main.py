@@ -93,7 +93,9 @@ def update_markers(category):
                     else:
                         print(f"Marker at {lat}, {lon} already exists.")
                 else:
-                    print(f"Address '{address}' could not be found or geocoded.")
+                    error_message = f"Address '{address}' could not be found or geocoded."
+                    print(error_message)
+                    return jsonify({"status": "error", "message": error_message}), 400  # Return error if geocoding fails
             else:
                 print(f"Item does not contain 'Address' key: {item}")
 
