@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_889f5ad25898ff229e64c15c8fefa8a3 {
+                #map_aad974671599469ff331777553f603d0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,16 +39,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_889f5ad25898ff229e64c15c8fefa8a3" ></div>
+            <div class="folium-map" id="map_aad974671599469ff331777553f603d0" ></div>
         
 </body>
 <script>
     
     
-            var map_889f5ad25898ff229e64c15c8fefa8a3 = L.map(
-                "map_889f5ad25898ff229e64c15c8fefa8a3",
+            var map_aad974671599469ff331777553f603d0 = L.map(
+                "map_aad974671599469ff331777553f603d0",
                 {
-                    center: [40.6897222, -73.9652778],
+                    center: [40.7128, -74.006],
                     crs: L.CRS.EPSG3857,
                     zoom: 12,
                     zoomControl: true,
@@ -60,265 +60,496 @@
 
         
     
-            var tile_layer_0a740c406e50ff7a90b91c5d205c944f = L.tileLayer(
+            var tile_layer_4978c2df1cce35ee74b81832a21047ad = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_0a740c406e50ff7a90b91c5d205c944f.addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
+            tile_layer_4978c2df1cce35ee74b81832a21047ad.addTo(map_aad974671599469ff331777553f603d0);
         
     
-            var marker_137e281232dece934758ec294ff04577 = L.marker(
+            var marker_4ffcaa94bec248a8fc138be7433c34c3 = L.marker(
                 [40.7512542, -73.9731311],
                 {}
-            ).addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
+            ).addTo(map_aad974671599469ff331777553f603d0);
         
     
-            var icon_6a84de9f3f57f7f8fe24b6ac321d877a = L.AwesomeMarkers.icon(
+            var icon_531171565f4f04827f7172238ff60477 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_137e281232dece934758ec294ff04577.setIcon(icon_6a84de9f3f57f7f8fe24b6ac321d877a);
+            marker_4ffcaa94bec248a8fc138be7433c34c3.setIcon(icon_531171565f4f04827f7172238ff60477);
         
     
-        var popup_ab92b718fe489ab4bc8c1534e5a5034c = L.popup({"maxWidth": "100%"});
+        var popup_5b66c6517e257ab1aa63d24bcc24b6d2 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_c48d8155cc1fec543ce8987e844fb564 = $(`<div id="html_c48d8155cc1fec543ce8987e844fb564" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> New York Psychological Association</p>                     <p><strong>Category:</strong> Counseling</p>                     <p><strong>Description:</strong> Provides mental health counseling and therapy services.</p>                     <p><strong>Phone:</strong> (212) 555-1234</p>                     <p><strong>Hours:</strong> Mon-Fri: 9am - 5pm</p>                 </div>             </div>`)[0];
-                popup_ab92b718fe489ab4bc8c1534e5a5034c.setContent(html_c48d8155cc1fec543ce8987e844fb564);
+                var html_93a0abe98cd4180e075930aca4920a08 = $(`<div id="html_93a0abe98cd4180e075930aca4920a08" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> New York Psychological Association</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> 211 E 43rd St, New York, NY 10017</p>                                 <p><strong>Description:</strong> Provides mental health counseling and therapy services.</p>                                 <p><strong>Contact Info:</strong> 66664566565</p>                                 <p><strong>Hours of Operation:</strong> 2024-01-11</p>                                 <p><strong>Category:</strong> Counseling</p>                             </div>                         </div>`)[0];
+                popup_5b66c6517e257ab1aa63d24bcc24b6d2.setContent(html_93a0abe98cd4180e075930aca4920a08);
             
         
 
-        marker_137e281232dece934758ec294ff04577.bindPopup(popup_ab92b718fe489ab4bc8c1534e5a5034c)
+        marker_4ffcaa94bec248a8fc138be7433c34c3.bindPopup(popup_5b66c6517e257ab1aa63d24bcc24b6d2)
         ;
 
         
     
     
-            var marker_678acc3747348938a1b9141e8f54a846 = L.marker(
-                [40.70635025, -74.01343025076793],
+            var marker_fe66a522de793c3c94d387c92876ab19 = L.marker(
+                [40.7512542, -73.9731311],
                 {}
-            ).addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
+            ).addTo(map_aad974671599469ff331777553f603d0);
         
     
-            var icon_ee45cf74e707ac94dd3eacdc4db4da22 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            var icon_c52893ff8c4c52d4deffb95d5355e94a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_678acc3747348938a1b9141e8f54a846.setIcon(icon_ee45cf74e707ac94dd3eacdc4db4da22);
+            marker_fe66a522de793c3c94d387c92876ab19.setIcon(icon_c52893ff8c4c52d4deffb95d5355e94a);
         
     
-        var popup_fa36121c3c005b8c9fbab059dbb07b44 = L.popup({"maxWidth": "100%"});
+        var popup_92c625863f1aa648e042f96c01343e10 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a763dad4611903fb12e581b96926bc55 = $(`<div id="html_a763dad4611903fb12e581b96926bc55" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Food Bank For New York City</p>                     <p><strong>Category:</strong> Food</p>                     <p><strong>Description:</strong> Food distribution center serving NYC’s hungry.</p>                     <p><strong>Phone:</strong> (212) 555-3456</p>                     <p><strong>Hours:</strong> Mon-Fri: 8am - 6pm</p>                 </div>             </div>`)[0];
-                popup_fa36121c3c005b8c9fbab059dbb07b44.setContent(html_a763dad4611903fb12e581b96926bc55);
+                var html_c135413b9a4281f7d52846d648a640f4 = $(`<div id="html_c135413b9a4281f7d52846d648a640f4" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> New York Psychological Association</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> 211 E 43rd St, New York, NY 10017</p>                                 <p><strong>Description:</strong> Provides mental health counseling and therapy services.</p>                                 <p><strong>Contact Info:</strong> 66664566565</p>                                 <p><strong>Hours of Operation:</strong> 2024-01-11</p>                                 <p><strong>Category:</strong> Counseling</p>                             </div>                         </div>`)[0];
+                popup_92c625863f1aa648e042f96c01343e10.setContent(html_c135413b9a4281f7d52846d648a640f4);
             
         
 
-        marker_678acc3747348938a1b9141e8f54a846.bindPopup(popup_fa36121c3c005b8c9fbab059dbb07b44)
+        marker_fe66a522de793c3c94d387c92876ab19.bindPopup(popup_92c625863f1aa648e042f96c01343e10)
         ;
 
         
     
     
-            var marker_ed9d0fa05a5e1481160c19b9f8506934 = L.marker(
-                [42.71088215789474, -73.706979],
+            var marker_a6d46676c820d592890ce4883d328feb = L.marker(
+                [40.7512542, -73.9731311],
                 {}
-            ).addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
+            ).addTo(map_aad974671599469ff331777553f603d0);
         
     
-            var icon_e2fcd91dad0c1469c7f63c4abe98ec85 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            var icon_da34faf3bf87e0a257457e94ad9a178a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_ed9d0fa05a5e1481160c19b9f8506934.setIcon(icon_e2fcd91dad0c1469c7f63c4abe98ec85);
+            marker_a6d46676c820d592890ce4883d328feb.setIcon(icon_da34faf3bf87e0a257457e94ad9a178a);
         
     
-        var popup_a38c6904078932c8460b8e26f960f5f4 = L.popup({"maxWidth": "100%"});
+        var popup_61a95d46d2d06466f1ae3a62e5627bd9 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_4c4e55cba5052c1abfbfd3c4b3d6a0f0 = $(`<div id="html_4c4e55cba5052c1abfbfd3c4b3d6a0f0" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Bellevue Hospital Center</p>                     <p><strong>Category:</strong> Healthcare</p>                     <p><strong>Description:</strong> Comprehensive health services including mental health care and addiction treatment.</p>                     <p><strong>Phone:</strong> (212) 555-5678</p>                     <p><strong>Hours:</strong> 24/7</p>                 </div>             </div>`)[0];
-                popup_a38c6904078932c8460b8e26f960f5f4.setContent(html_4c4e55cba5052c1abfbfd3c4b3d6a0f0);
+                var html_15a6392fa4832ebc88c14840d6483d50 = $(`<div id="html_15a6392fa4832ebc88c14840d6483d50" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> New York Psychological Association</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> 211 E 43rd St, New York, NY 10017</p>                                 <p><strong>Description:</strong> Provides mental health counseling and therapy services.</p>                                 <p><strong>Contact Info:</strong> 66664566565</p>                                 <p><strong>Hours of Operation:</strong> 2024-01-11</p>                                 <p><strong>Category:</strong> Counseling</p>                             </div>                         </div>`)[0];
+                popup_61a95d46d2d06466f1ae3a62e5627bd9.setContent(html_15a6392fa4832ebc88c14840d6483d50);
             
         
 
-        marker_ed9d0fa05a5e1481160c19b9f8506934.bindPopup(popup_a38c6904078932c8460b8e26f960f5f4)
+        marker_a6d46676c820d592890ce4883d328feb.bindPopup(popup_61a95d46d2d06466f1ae3a62e5627bd9)
         ;
 
         
     
     
-            var marker_88427c0fa18ad17cad2717cfe9c370ba = L.marker(
-                [40.7284401, -74.005096],
+            var marker_3dbd1553837cb71397dfc38ab8112b5e = L.marker(
+                [40.7512542, -73.9731311],
                 {}
-            ).addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
+            ).addTo(map_aad974671599469ff331777553f603d0);
         
     
-            var icon_79b592275b455af88be333c2ed2fc93b = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            var icon_b58e8b18733ebc7f69d72921eedf62f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_88427c0fa18ad17cad2717cfe9c370ba.setIcon(icon_79b592275b455af88be333c2ed2fc93b);
+            marker_3dbd1553837cb71397dfc38ab8112b5e.setIcon(icon_b58e8b18733ebc7f69d72921eedf62f9);
         
     
-        var popup_d710ce47e4faea9b733dffcddbe030e5 = L.popup({"maxWidth": "100%"});
+        var popup_8ca4e3f6422076f649a0def0ec9042c9 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_ce346331e1648ec9efab8709a362b062 = $(`<div id="html_ce346331e1648ec9efab8709a362b062" style="width: 100.0%; height: 100.0%;">                 <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                     <p><strong>Name:</strong> Project Renewal Outreach</p>                     <p><strong>Category:</strong> Outreach</p>                     <p><strong>Description:</strong> Provides outreach services to homeless individuals across NYC.</p>                     <p><strong>Phone:</strong> (212) 555-7890</p>                     <p><strong>Hours:</strong> Mon-Sun: 9am - 7pm</p>                 </div>             </div>`)[0];
-                popup_d710ce47e4faea9b733dffcddbe030e5.setContent(html_ce346331e1648ec9efab8709a362b062);
+                var html_4611bf8fd8fda574eb78da950268d561 = $(`<div id="html_4611bf8fd8fda574eb78da950268d561" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> New York Psychological Association</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> 211 E 43rd St, New York, NY 10017</p>                                 <p><strong>Description:</strong> Provides mental health counseling and therapy services.</p>                                 <p><strong>Contact Info:</strong> 66664566565</p>                                 <p><strong>Hours of Operation:</strong> 2024-01-11</p>                                 <p><strong>Category:</strong> Counseling</p>                             </div>                         </div>`)[0];
+                popup_8ca4e3f6422076f649a0def0ec9042c9.setContent(html_4611bf8fd8fda574eb78da950268d561);
             
         
 
-        marker_88427c0fa18ad17cad2717cfe9c370ba.bindPopup(popup_d710ce47e4faea9b733dffcddbe030e5)
+        marker_3dbd1553837cb71397dfc38ab8112b5e.bindPopup(popup_8ca4e3f6422076f649a0def0ec9042c9)
         ;
 
         
     
     
-            var marker_a20c5f8ff743fce13bbb767001156b67 = L.marker(
-                [40.7128, -74.006],
-                {}
-            ).addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
-        
-    
-        var popup_38e17f161afa3afcda06012edd5740be = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_5695c06104993cc0e63abeefc6f16fa7 = $(`<div id="html_5695c06104993cc0e63abeefc6f16fa7" style="width: 100.0%; height: 100.0%;">Marker at 40.7128, -74.006</div>`)[0];
-                popup_38e17f161afa3afcda06012edd5740be.setContent(html_5695c06104993cc0e63abeefc6f16fa7);
-            
-        
-
-        marker_a20c5f8ff743fce13bbb767001156b67.bindPopup(popup_38e17f161afa3afcda06012edd5740be)
-        ;
-
-        
-    
-    
-            var marker_0f28ea7b6e7fb077ae5ad8da1b191f19 = L.marker(
-                [27.4160077, -81.3758407],
-                {}
-            ).addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
-        
-    
-        var popup_42fa641c087b186927f52230e4029091 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_3852ec6ceed244072061c979006d546a = $(`<div id="html_3852ec6ceed244072061c979006d546a" style="width: 100.0%; height: 100.0%;">Marker at 27.4160077, -81.3758407</div>`)[0];
-                popup_42fa641c087b186927f52230e4029091.setContent(html_3852ec6ceed244072061c979006d546a);
-            
-        
-
-        marker_0f28ea7b6e7fb077ae5ad8da1b191f19.bindPopup(popup_42fa641c087b186927f52230e4029091)
-        ;
-
-        
-    
-    
-            var marker_ebb8ec487b00b7233dbe5c9e93885605 = L.marker(
-                [40.7029052, -73.990118],
-                {}
-            ).addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
-        
-    
-        var popup_f6154e3cfba888a683cdea6a3715052e = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_7b4d136d70126d8f3f817b95cd1cc1d9 = $(`<div id="html_7b4d136d70126d8f3f817b95cd1cc1d9" style="width: 100.0%; height: 100.0%;">Marker at 40.7029052, -73.990118</div>`)[0];
-                popup_f6154e3cfba888a683cdea6a3715052e.setContent(html_7b4d136d70126d8f3f817b95cd1cc1d9);
-            
-        
-
-        marker_ebb8ec487b00b7233dbe5c9e93885605.bindPopup(popup_f6154e3cfba888a683cdea6a3715052e)
-        ;
-
-        
-    
-    
-            var marker_966cb3dfa72e43463c78299a77281885 = L.marker(
+            var marker_91c46b62da9eb17b81c1d735f0828db9 = L.marker(
                 [40.6907711, -73.9766245],
                 {}
-            ).addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
+            ).addTo(map_aad974671599469ff331777553f603d0);
         
     
-        var popup_a4dc866c1bb3aa8bf73ff3aa3e201456 = L.popup({"maxWidth": "100%"});
+            var icon_95fd36834d4b0ca8a3d6870fb96d79cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_91c46b62da9eb17b81c1d735f0828db9.setIcon(icon_95fd36834d4b0ca8a3d6870fb96d79cd);
+        
+    
+        var popup_a747a0fc2ebb4871342a36473b7217ec = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_b7634823698aff75a0e1e61fb68bde62 = $(`<div id="html_b7634823698aff75a0e1e61fb68bde62" style="width: 100.0%; height: 100.0%;">Marker at 40.6907711, -73.9766245</div>`)[0];
-                popup_a4dc866c1bb3aa8bf73ff3aa3e201456.setContent(html_b7634823698aff75a0e1e61fb68bde62);
+                var html_b38545dc8b026ec32ae1f97a17af3288 = $(`<div id="html_b38545dc8b026ec32ae1f97a17af3288" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> LocalFarm</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> Fort Greene</p>                                 <p><strong>Description:</strong> Fruits</p>                                 <p><strong>Contact Info:</strong> contact@localfarm.com</p>                                 <p><strong>Hours of Operation:</strong> 9 AM - 5 PM</p>                                 <p><strong>Category:</strong> Food</p>                             </div>                         </div>`)[0];
+                popup_a747a0fc2ebb4871342a36473b7217ec.setContent(html_b38545dc8b026ec32ae1f97a17af3288);
             
         
 
-        marker_966cb3dfa72e43463c78299a77281885.bindPopup(popup_a4dc866c1bb3aa8bf73ff3aa3e201456)
+        marker_91c46b62da9eb17b81c1d735f0828db9.bindPopup(popup_a747a0fc2ebb4871342a36473b7217ec)
         ;
 
         
     
     
-            var marker_c402d3528b70c8f56d89346e3852b55b = L.marker(
-                [40.68562615, -73.98417065807277],
+            var marker_6b0ee04e61b6f34ef4a99b976f9290d9 = L.marker(
+                [40.6907711, -73.9766245],
                 {}
-            ).addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
+            ).addTo(map_aad974671599469ff331777553f603d0);
         
     
-        var popup_2f92357b4c1e2e95a8b0ed2ae2950b07 = L.popup({"maxWidth": "100%"});
+            var icon_4e43730ebb38b28775cf03a4011ba5a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6b0ee04e61b6f34ef4a99b976f9290d9.setIcon(icon_4e43730ebb38b28775cf03a4011ba5a8);
+        
+    
+        var popup_da6ecabd04e08bbcdd07c1cc280ce135 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_6124d46f5a716b7e88760193e7add9bf = $(`<div id="html_6124d46f5a716b7e88760193e7add9bf" style="width: 100.0%; height: 100.0%;">Marker at 40.68562615, -73.98417065807277</div>`)[0];
-                popup_2f92357b4c1e2e95a8b0ed2ae2950b07.setContent(html_6124d46f5a716b7e88760193e7add9bf);
+                var html_8d8158541e6f674112d1c40c10e7612e = $(`<div id="html_8d8158541e6f674112d1c40c10e7612e" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> LocalFarm</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> Fort Greene</p>                                 <p><strong>Description:</strong> Fruits</p>                                 <p><strong>Contact Info:</strong> contact@localfarm.com</p>                                 <p><strong>Hours of Operation:</strong> 9 AM - 5 PM</p>                                 <p><strong>Category:</strong> Food</p>                             </div>                         </div>`)[0];
+                popup_da6ecabd04e08bbcdd07c1cc280ce135.setContent(html_8d8158541e6f674112d1c40c10e7612e);
             
         
 
-        marker_c402d3528b70c8f56d89346e3852b55b.bindPopup(popup_2f92357b4c1e2e95a8b0ed2ae2950b07)
+        marker_6b0ee04e61b6f34ef4a99b976f9290d9.bindPopup(popup_da6ecabd04e08bbcdd07c1cc280ce135)
         ;
 
         
     
     
-            var marker_12461beef36bde462495d7e05daab843 = L.marker(
-                [40.6791695, -73.9885041],
+            var marker_564b038c66bf3e1f5283d3856e47ed43 = L.marker(
+                [40.6907711, -73.9766245],
                 {}
-            ).addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
+            ).addTo(map_aad974671599469ff331777553f603d0);
         
     
-        var popup_5d8a54fc0e9850772ef07377dd33221f = L.popup({"maxWidth": "100%"});
+            var icon_0b41bfa6fa4ddcf722a5d63b4ec3a931 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_564b038c66bf3e1f5283d3856e47ed43.setIcon(icon_0b41bfa6fa4ddcf722a5d63b4ec3a931);
+        
+    
+        var popup_f2d905bdd5ce2466e8f763fef3b8c6b3 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_864abf3e23d5e94b822f1f9e20fcee17 = $(`<div id="html_864abf3e23d5e94b822f1f9e20fcee17" style="width: 100.0%; height: 100.0%;">Marker at 40.6791695, -73.9885041</div>`)[0];
-                popup_5d8a54fc0e9850772ef07377dd33221f.setContent(html_864abf3e23d5e94b822f1f9e20fcee17);
+                var html_1cae3d951ff0720ce5fb81308b0010c1 = $(`<div id="html_1cae3d951ff0720ce5fb81308b0010c1" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> LocalFarm</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> Fort Greene</p>                                 <p><strong>Description:</strong> Fruits</p>                                 <p><strong>Contact Info:</strong> contact@localfarm.com</p>                                 <p><strong>Hours of Operation:</strong> 9 AM - 5 PM</p>                                 <p><strong>Category:</strong> Food</p>                             </div>                         </div>`)[0];
+                popup_f2d905bdd5ce2466e8f763fef3b8c6b3.setContent(html_1cae3d951ff0720ce5fb81308b0010c1);
             
         
 
-        marker_12461beef36bde462495d7e05daab843.bindPopup(popup_5d8a54fc0e9850772ef07377dd33221f)
+        marker_564b038c66bf3e1f5283d3856e47ed43.bindPopup(popup_f2d905bdd5ce2466e8f763fef3b8c6b3)
         ;
 
         
     
     
-            var marker_04abc65a4d01bd2098d5905a1d7307cd = L.marker(
-                [40.6897222, -73.9652778],
+            var marker_daf7378d6b268926572a329fdffe003e = L.marker(
+                [40.76774558824014, -73.9815998099194],
                 {}
-            ).addTo(map_889f5ad25898ff229e64c15c8fefa8a3);
+            ).addTo(map_aad974671599469ff331777553f603d0);
         
     
-        var popup_a965f2a21af48c8d5c33b126fee127cd = L.popup({"maxWidth": "100%"});
+            var icon_67e670f9ab6228d9ae46418df475eac3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_daf7378d6b268926572a329fdffe003e.setIcon(icon_67e670f9ab6228d9ae46418df475eac3);
+        
+    
+        var popup_8823e30f3422c05979f7be1cf8498335 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_e2f7655d7378f191ff28d2cfdeae6ad2 = $(`<div id="html_e2f7655d7378f191ff28d2cfdeae6ad2" style="width: 100.0%; height: 100.0%;">Marker at 40.6897222, -73.9652778</div>`)[0];
-                popup_a965f2a21af48c8d5c33b126fee127cd.setContent(html_e2f7655d7378f191ff28d2cfdeae6ad2);
+                var html_019b83d2d580fb33e26bcae49802744f = $(`<div id="html_019b83d2d580fb33e26bcae49802744f" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> My New Hospital</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> Columbus Circle</p>                                 <p><strong>Description:</strong> General Checkup</p>                                 <p><strong>Contact Info:</strong> 123-456-7890</p>                                 <p><strong>Hours of Operation:</strong> 9 AM - 5 PM</p>                                 <p><strong>Category:</strong> Healthcare</p>                             </div>                         </div>`)[0];
+                popup_8823e30f3422c05979f7be1cf8498335.setContent(html_019b83d2d580fb33e26bcae49802744f);
             
         
 
-        marker_04abc65a4d01bd2098d5905a1d7307cd.bindPopup(popup_a965f2a21af48c8d5c33b126fee127cd)
+        marker_daf7378d6b268926572a329fdffe003e.bindPopup(popup_8823e30f3422c05979f7be1cf8498335)
+        ;
+
+        
+    
+    
+            var marker_ee9c396dc56ef4ffb9fb4a30ca76c637 = L.marker(
+                [40.76774558824014, -73.9815998099194],
+                {}
+            ).addTo(map_aad974671599469ff331777553f603d0);
+        
+    
+            var icon_d2ba7c790936ecbb9d57db968c55d84e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee9c396dc56ef4ffb9fb4a30ca76c637.setIcon(icon_d2ba7c790936ecbb9d57db968c55d84e);
+        
+    
+        var popup_694ead59ddcac17924c854c294f636bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e60f98863a1e51c6a4bb42d0e8be5f0f = $(`<div id="html_e60f98863a1e51c6a4bb42d0e8be5f0f" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> My New Hospital</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> Columbus Circle</p>                                 <p><strong>Description:</strong> General Checkup</p>                                 <p><strong>Contact Info:</strong> 123-456-7890</p>                                 <p><strong>Hours of Operation:</strong> 9 AM - 5 PM</p>                                 <p><strong>Category:</strong> Healthcare</p>                             </div>                         </div>`)[0];
+                popup_694ead59ddcac17924c854c294f636bd.setContent(html_e60f98863a1e51c6a4bb42d0e8be5f0f);
+            
+        
+
+        marker_ee9c396dc56ef4ffb9fb4a30ca76c637.bindPopup(popup_694ead59ddcac17924c854c294f636bd)
+        ;
+
+        
+    
+    
+            var marker_a2418fcd1b6bb1280103bdf23b9dd292 = L.marker(
+                [40.76774558824014, -73.9815998099194],
+                {}
+            ).addTo(map_aad974671599469ff331777553f603d0);
+        
+    
+            var icon_26edeb71412ab8b1555958c7db41e2a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a2418fcd1b6bb1280103bdf23b9dd292.setIcon(icon_26edeb71412ab8b1555958c7db41e2a1);
+        
+    
+        var popup_14967c2ab1e8143ebba227950e8ece17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_403e83da455aa71a2b5cb606ed3777ff = $(`<div id="html_403e83da455aa71a2b5cb606ed3777ff" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> My New Hospital</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> Columbus Circle</p>                                 <p><strong>Description:</strong> General Checkup</p>                                 <p><strong>Contact Info:</strong> 123-456-7890</p>                                 <p><strong>Hours of Operation:</strong> 9 AM - 5 PM</p>                                 <p><strong>Category:</strong> Healthcare</p>                             </div>                         </div>`)[0];
+                popup_14967c2ab1e8143ebba227950e8ece17.setContent(html_403e83da455aa71a2b5cb606ed3777ff);
+            
+        
+
+        marker_a2418fcd1b6bb1280103bdf23b9dd292.bindPopup(popup_14967c2ab1e8143ebba227950e8ece17)
+        ;
+
+        
+    
+    
+            var marker_28e802385d60d1395a931c66cd459d7d = L.marker(
+                [40.7284401, -74.005096],
+                {}
+            ).addTo(map_aad974671599469ff331777553f603d0);
+        
+    
+            var icon_cf7084e9a47651a881a4c0d4e66dc8dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_28e802385d60d1395a931c66cd459d7d.setIcon(icon_cf7084e9a47651a881a4c0d4e66dc8dc);
+        
+    
+        var popup_d84ffcc5a45db0b74b7395450cb3dd7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_736a55a5ec90a4f7547ccbce20690731 = $(`<div id="html_736a55a5ec90a4f7547ccbce20690731" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> Emergency Shelter Access</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> 200 Varick St, New York, NY 10014</p>                                 <p><strong>Description:</strong> Provide information and assistance for accessing shelters.</p>                                 <p><strong>Contact Info:</strong> Sarah Johnson, sarah@email.com</p>                                 <p><strong>Hours of Operation:</strong> 05/01/24 - 12/31/24</p>                                 <p><strong>Category:</strong> Outreach</p>                             </div>                         </div>`)[0];
+                popup_d84ffcc5a45db0b74b7395450cb3dd7b.setContent(html_736a55a5ec90a4f7547ccbce20690731);
+            
+        
+
+        marker_28e802385d60d1395a931c66cd459d7d.bindPopup(popup_d84ffcc5a45db0b74b7395450cb3dd7b)
+        ;
+
+        
+    
+    
+            var marker_7eed6963c99fe30d6034a1273de15cbf = L.marker(
+                [40.7284401, -74.005096],
+                {}
+            ).addTo(map_aad974671599469ff331777553f603d0);
+        
+    
+            var icon_b24a420dc0d1d8478a415978e2bdc140 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7eed6963c99fe30d6034a1273de15cbf.setIcon(icon_b24a420dc0d1d8478a415978e2bdc140);
+        
+    
+        var popup_89cab670a011df772e6720a65581cd8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b1e65d069a7b075e0492b8bd096ca76 = $(`<div id="html_7b1e65d069a7b075e0492b8bd096ca76" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> Emergency Shelter Access</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> 200 Varick St, New York, NY 10014</p>                                 <p><strong>Description:</strong> Provide information and assistance for accessing shelters.</p>                                 <p><strong>Contact Info:</strong> Sarah Johnson, sarah@email.com</p>                                 <p><strong>Hours of Operation:</strong> 05/01/24 - 12/31/24</p>                                 <p><strong>Category:</strong> Outreach</p>                             </div>                         </div>`)[0];
+                popup_89cab670a011df772e6720a65581cd8f.setContent(html_7b1e65d069a7b075e0492b8bd096ca76);
+            
+        
+
+        marker_7eed6963c99fe30d6034a1273de15cbf.bindPopup(popup_89cab670a011df772e6720a65581cd8f)
+        ;
+
+        
+    
+    
+            var marker_461c4d1aa1f22dfc094cd76c6700d2c4 = L.marker(
+                [40.7284401, -74.005096],
+                {}
+            ).addTo(map_aad974671599469ff331777553f603d0);
+        
+    
+            var icon_206ab5177e56b2ed36b1a414637b18f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_461c4d1aa1f22dfc094cd76c6700d2c4.setIcon(icon_206ab5177e56b2ed36b1a414637b18f4);
+        
+    
+        var popup_67a420cc002726fc0c1ff5665f038098 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56c73bc07f1d642f0f24be1756dccdff = $(`<div id="html_56c73bc07f1d642f0f24be1756dccdff" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> Emergency Shelter Access</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> 200 Varick St, New York, NY 10014</p>                                 <p><strong>Description:</strong> Provide information and assistance for accessing shelters.</p>                                 <p><strong>Contact Info:</strong> Sarah Johnson, sarah@email.com</p>                                 <p><strong>Hours of Operation:</strong> 05/01/24 - 12/31/24</p>                                 <p><strong>Category:</strong> Outreach</p>                             </div>                         </div>`)[0];
+                popup_67a420cc002726fc0c1ff5665f038098.setContent(html_56c73bc07f1d642f0f24be1756dccdff);
+            
+        
+
+        marker_461c4d1aa1f22dfc094cd76c6700d2c4.bindPopup(popup_67a420cc002726fc0c1ff5665f038098)
+        ;
+
+        
+    
+    
+            var marker_15bf5f7cb36697628356aec0627123bb = L.marker(
+                [40.7284401, -74.005096],
+                {}
+            ).addTo(map_aad974671599469ff331777553f603d0);
+        
+    
+            var icon_6b859866ecf04a7642f18283a7cdf76b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_15bf5f7cb36697628356aec0627123bb.setIcon(icon_6b859866ecf04a7642f18283a7cdf76b);
+        
+    
+        var popup_30818be36037e767daa8be0392761f69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f59d3ebfcc6e4366da79d90ab827db3 = $(`<div id="html_6f59d3ebfcc6e4366da79d90ab827db3" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> Emergency Shelter Access</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> 200 Varick St, New York, NY 10014</p>                                 <p><strong>Description:</strong> Provide information and assistance for accessing shelters.</p>                                 <p><strong>Contact Info:</strong> Sarah Johnson, sarah@email.com</p>                                 <p><strong>Hours of Operation:</strong> 05/01/24 - 12/31/24</p>                                 <p><strong>Category:</strong> Outreach</p>                             </div>                         </div>`)[0];
+                popup_30818be36037e767daa8be0392761f69.setContent(html_6f59d3ebfcc6e4366da79d90ab827db3);
+            
+        
+
+        marker_15bf5f7cb36697628356aec0627123bb.bindPopup(popup_30818be36037e767daa8be0392761f69)
+        ;
+
+        
+    
+    
+            var marker_d9485f7c0ff1e49510964545cd92016b = L.marker(
+                [40.7284401, -74.005096],
+                {}
+            ).addTo(map_aad974671599469ff331777553f603d0);
+        
+    
+            var icon_aa28c5b79f6446302ff2d0525f5b4a65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d9485f7c0ff1e49510964545cd92016b.setIcon(icon_aa28c5b79f6446302ff2d0525f5b4a65);
+        
+    
+        var popup_a366b5caebfcc8207a3dfbc1fb414608 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94d5e48ed7f3c318b7d54022a50b49ff = $(`<div id="html_94d5e48ed7f3c318b7d54022a50b49ff" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> Emergency Shelter Access</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> 200 Varick St, New York, NY 10014</p>                                 <p><strong>Description:</strong> Provide information and assistance for accessing shelters.</p>                                 <p><strong>Contact Info:</strong> Sarah Johnson, sarah@email.com</p>                                 <p><strong>Hours of Operation:</strong> 05/01/24 - 12/31/24</p>                                 <p><strong>Category:</strong> Outreach</p>                             </div>                         </div>`)[0];
+                popup_a366b5caebfcc8207a3dfbc1fb414608.setContent(html_94d5e48ed7f3c318b7d54022a50b49ff);
+            
+        
+
+        marker_d9485f7c0ff1e49510964545cd92016b.bindPopup(popup_a366b5caebfcc8207a3dfbc1fb414608)
+        ;
+
+        
+    
+    
+            var marker_9b1f93d5d9098c928bdbd0f72427e37e = L.marker(
+                [40.75701215, -73.98597092538824],
+                {}
+            ).addTo(map_aad974671599469ff331777553f603d0);
+        
+    
+            var icon_4350e5eaf1135653aaf8c59e507e1d0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9b1f93d5d9098c928bdbd0f72427e37e.setIcon(icon_4350e5eaf1135653aaf8c59e507e1d0e);
+        
+    
+        var popup_ae720678ff4a29507cbda854799502f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ba2447998e0f234d1964a887e8fe838 = $(`<div id="html_8ba2447998e0f234d1964a887e8fe838" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> Columbus</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> Times Square</p>                                 <p><strong>Description:</strong> Shelter for homeless individuals.</p>                                 <p><strong>Contact Info:</strong> 66664566565</p>                                 <p><strong>Hours of Operation:</strong> 2024-01-11</p>                                 <p><strong>Category:</strong> Shelter</p>                             </div>                         </div>`)[0];
+                popup_ae720678ff4a29507cbda854799502f0.setContent(html_8ba2447998e0f234d1964a887e8fe838);
+            
+        
+
+        marker_9b1f93d5d9098c928bdbd0f72427e37e.bindPopup(popup_ae720678ff4a29507cbda854799502f0)
+        ;
+
+        
+    
+    
+            var marker_4ae3df0e5a415cd42695f084695d4a0a = L.marker(
+                [40.75701215, -73.98597092538824],
+                {}
+            ).addTo(map_aad974671599469ff331777553f603d0);
+        
+    
+            var icon_c49518b3746e866c208ddac85c3278e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4ae3df0e5a415cd42695f084695d4a0a.setIcon(icon_c49518b3746e866c208ddac85c3278e2);
+        
+    
+        var popup_e608cde888043f0d305607a8f0e64d05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f382716dce1d2db4d98a3ffa2078f3d1 = $(`<div id="html_f382716dce1d2db4d98a3ffa2078f3d1" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> Columbus</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> Times Square</p>                                 <p><strong>Description:</strong> Shelter for homeless individuals.</p>                                 <p><strong>Contact Info:</strong> 66664566565</p>                                 <p><strong>Hours of Operation:</strong> 2024-01-11</p>                                 <p><strong>Category:</strong> Shelter</p>                             </div>                         </div>`)[0];
+                popup_e608cde888043f0d305607a8f0e64d05.setContent(html_f382716dce1d2db4d98a3ffa2078f3d1);
+            
+        
+
+        marker_4ae3df0e5a415cd42695f084695d4a0a.bindPopup(popup_e608cde888043f0d305607a8f0e64d05)
+        ;
+
+        
+    
+    
+            var marker_4bc5eed58998ca182ee868ab7bb7ee5a = L.marker(
+                [40.75701215, -73.98597092538824],
+                {}
+            ).addTo(map_aad974671599469ff331777553f603d0);
+        
+    
+            var icon_9d945bbf92b47052759f7a0e34a2271e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4bc5eed58998ca182ee868ab7bb7ee5a.setIcon(icon_9d945bbf92b47052759f7a0e34a2271e);
+        
+    
+        var popup_d700d0d1c1861e7cd7e5932d96bf8f02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba7a8835a64f1f59b0bfdc91f46ea4d8 = $(`<div id="html_ba7a8835a64f1f59b0bfdc91f46ea4d8" style="width: 100.0%; height: 100.0%;">                             <div style="font-size: 16px; font-weight: bold; color: #333; width: 400px; padding: 10px; line-height: 1.6;">                                 <p><strong>Name:</strong> Columbus</p>                                 <p><strong>City:</strong> NYC</p>                                 <p><strong>Address:</strong> Times Square</p>                                 <p><strong>Description:</strong> Shelter for homeless individuals.</p>                                 <p><strong>Contact Info:</strong> 66664566565</p>                                 <p><strong>Hours of Operation:</strong> 2024-01-11</p>                                 <p><strong>Category:</strong> Shelter</p>                             </div>                         </div>`)[0];
+                popup_d700d0d1c1861e7cd7e5932d96bf8f02.setContent(html_ba7a8835a64f1f59b0bfdc91f46ea4d8);
+            
+        
+
+        marker_4bc5eed58998ca182ee868ab7bb7ee5a.bindPopup(popup_d700d0d1c1861e7cd7e5932d96bf8f02)
         ;
 
         
