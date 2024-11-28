@@ -152,3 +152,4 @@ if __name__ == "__main__":
     create_map() # create an empty map
     subscribe()
     app.run(host='0.0.0.0', port=6000)
+
