@@ -148,7 +148,13 @@ def subscribe():
         except Exception as e:
             print(f"Error subscribing to {category} updates: {e}")
 
-if __name__ == "__main__":    
-    create_map() # create an empty map
+if __name__ == "__main__":
+    create_map()  # create an empty map
     subscribe()
+    with app.app_context():
+        update_markers("Counseling")
+        update_markers("Food")
+        update_markers("Healthcare")
+        update_markers("Outreach")
+        update_markers("Shelter")
     app.run(host='0.0.0.0', port=6000)
