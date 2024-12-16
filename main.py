@@ -133,7 +133,7 @@ def subscribe():
         "API-Key": "abc123NGO",
         "Authorization": f"Bearer {BEARER_TOKEN}"
     }
-    city = "NYC"  
+    city = "New York"  
 
     for category in categories:
         body = {
